@@ -181,12 +181,12 @@ export function QuoteSheet({
         <div>
           <div className="party__label">Terms</div>
           {terms.length > 0 && (
-            <ul style={{ paddingLeft: 18, margin: "6px 0 0", color: "#54585F", fontSize: 12, lineHeight: 1.7 }}>
+            <ul style={{ paddingLeft: 18, margin: "6px 0 0", color: "#4B5563", fontSize: 12, lineHeight: 1.7 }}>
               {terms.map((t, i) => <li key={i}>{t}</li>)}
             </ul>
           )}
           {notesFooter && (
-            <div style={{ color: "#54585F", fontSize: 12, lineHeight: 1.6, marginTop: 12 }}>
+            <div style={{ color: "#4B5563", fontSize: 12, lineHeight: 1.6, marginTop: 12 }}>
               {notesFooter}
             </div>
           )}

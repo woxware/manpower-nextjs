@@ -14,12 +14,12 @@ import { formatSheetAmount } from "@/components/features/documents/sheets/types"
 import type { PdfPartyColumn, PdfSheetModel, PdfTotalsRow } from "./sheet-model";
 
 const C = {
-  ink: "#14161A",
-  muted: "#54585F",
-  dim: "#898E96",
-  hair: "#ECECE7",
-  hairStrong: "#D9D9D2",
-  pillBg: "#F4F4F1",
+  ink: "#111827",
+  muted: "#4B5563",
+  dim: "#9CA3AF",
+  hair: "#EBEEF2",
+  hairStrong: "#DADFE6",
+  pillBg: "#F1F5F9",
   successBg: "#E6F2EB",
   success: "#1F8A52",
   warnBg: "#FAF0DD",

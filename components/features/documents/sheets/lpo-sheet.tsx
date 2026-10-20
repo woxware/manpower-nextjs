@@ -209,7 +209,7 @@ export function LpoSheet({
               gridTemplateColumns: "1.5fr 0.8fr",
               gap: 24,
               alignItems: "center",
-              border: "1px solid #ECECE7",
+              border: "1px solid #EBEEF2",
               borderRadius: 12,
               padding: "18px 24px",
               marginBottom: 30,
@@ -217,7 +217,7 @@ export function LpoSheet({
           >
             <div>
               <div className="party__label">What this order authorises</div>
-              <div style={{ color: "#54585F", fontSize: 12.5, lineHeight: 1.55 }}>
+              <div style={{ color: "#4B5563", fontSize: 12.5, lineHeight: 1.55 }}>
                 {authorisationCopy}
               </div>
             </div>
@@ -229,7 +229,7 @@ export function LpoSheet({
                   fontSize: 30,
                   fontWeight: 600,
                   letterSpacing: "-0.03em",
-                  color: "#14161A",
+                  color: "#111827",
                   lineHeight: 1.05,
                 }}
               >

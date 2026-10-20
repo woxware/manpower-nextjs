@@ -118,7 +118,7 @@ export function ProposalCoverSheet({
               {preparedByRole && <div className="role">{preparedByRole}</div>}
             </div>
           </div>
-          <div style={{ textAlign: "right", fontSize: 11, color: "#898E96", fontFamily: "JetBrains Mono, monospace" }}>
+          <div style={{ textAlign: "right", fontSize: 11, color: "#9CA3AF", fontFamily: "JetBrains Mono, monospace" }}>
             Issued {issuedDate}<br />
             Valid {validDays} days
           </div>

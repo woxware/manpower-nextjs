@@ -30,7 +30,7 @@ export const WithPaymentInstructions: Story = {
     leftTitle: "Payment Instructions",
     paymentInstructions: PAYMENT_INSTRUCTIONS,
     rightTitle: "Notes",
-    rightContent: <p style={{ fontSize: 12, color: "#898E96" }}>Thank you for your business. Payment is due within 14 days.</p>,
+    rightContent: <p style={{ fontSize: 12, color: "#9CA3AF" }}>Thank you for your business. Payment is due within 14 days.</p>,
   },
 };
 
@@ -39,7 +39,7 @@ export const NotesOnly: Story = {
     leftTitle: "Notes",
     leftContent: <p style={{ fontSize: 12 }}>All prices are in AED and inclusive of 5% VAT where applicable.</p>,
     rightTitle: "Terms",
-    rightContent: <p style={{ fontSize: 12, color: "#898E96" }}>This quote is valid for 14 days from issue date.</p>,
+    rightContent: <p style={{ fontSize: 12, color: "#9CA3AF" }}>This quote is valid for 14 days from issue date.</p>,
   },
 };
 

@@ -197,8 +197,8 @@ export function ReceiptSheet({
           </div>
           <div
             style={{
-              background: "#FBFBF9",
-              border: "1px solid #ECECE7",
+              background: "#F8FAFC",
+              border: "1px solid #EBEEF2",
               borderRadius: 10,
               padding: "14px 16px",
               fontSize: 12.5,
@@ -217,7 +217,7 @@ export function ReceiptSheet({
             <div
               className="pay-line"
               style={{
-                borderTop: "1px solid #ECECE7",
+                borderTop: "1px solid #EBEEF2",
                 marginTop: 4,
                 paddingTop: 8,
                 fontWeight: 500,
@@ -233,7 +233,7 @@ export function ReceiptSheet({
             Notes
           </div>
           {notes && (
-            <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6 }}>
+            <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6 }}>
               {notes}
             </div>
           )}

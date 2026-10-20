@@ -99,7 +99,7 @@ const STATUS_PILL_MAP: Record<string, { label: string; bg: string; color: string
   overdue: { label: "Overdue", bg: "#FAF0DD", color: "#B36A12" },
   sent: { label: "Sent · awaiting payment", bg: "#ECFDF5", color: "#10B981" },
   partial: { label: "Partially paid", bg: "#FAF0DD", color: "#B36A12" },
-  draft: { label: "Draft", bg: "#F4F4F1", color: "#54585F" },
+  draft: { label: "Draft", bg: "#F1F5F9", color: "#4B5563" },
 };
 
 function StatusPillPdf({
@@ -109,7 +109,7 @@ function StatusPillPdf({
   status: string;
   styles: ReturnType<typeof makePdfStyles>;
 }) {
-  const pill = STATUS_PILL_MAP[status] ?? { label: status, bg: "#F4F4F1", color: "#54585F" };
+  const pill = STATUS_PILL_MAP[status] ?? { label: status, bg: "#F1F5F9", color: "#4B5563" };
   return (
     <View
       style={{
@@ -369,7 +369,7 @@ export function DocumentPdf({
         </View>
 
         {/* Separator — matches web hr between header and parties */}
-        <View style={{ marginHorizontal: 48, borderBottomWidth: 1, borderBottomColor: "#ECECE7", marginBottom: 18 }} />
+        <View style={{ marginHorizontal: 48, borderBottomWidth: 1, borderBottomColor: "#EBEEF2", marginBottom: 18 }} />
 
         {/* Parties */}
         <MetaSection
@@ -449,12 +449,12 @@ export function DocumentPdf({
 // downloaded PDF matches the on-screen voucher design.
 
 const RC = {
-  ink: "#14161A",
-  muted: "#54585F",
-  dim: "#898E96",
-  hair: "#ECECE7",
-  hairStrong: "#D9D9D2",
-  panel: "#FBFBF9",
+  ink: "#111827",
+  muted: "#4B5563",
+  dim: "#9CA3AF",
+  hair: "#EBEEF2",
+  hairStrong: "#DADFE6",
+  panel: "#F8FAFC",
   green: "#1F8A52",
   whiteMuted: "rgba(255,255,255,0.6)",
   whiteFaint: "rgba(255,255,255,0.55)",
@@ -776,7 +776,7 @@ const rcLabel = {
   fontSize: 8,
   fontWeight: 600 as const,
   letterSpacing: 1,
-  color: "#898E96",
+  color: "#9CA3AF",
   marginBottom: 6,
   textTransform: "uppercase" as const,
 };
@@ -785,13 +785,13 @@ const rcTh = {
   fontSize: 8,
   fontWeight: 600 as const,
   letterSpacing: 1,
-  color: "#898E96",
+  color: "#9CA3AF",
   textTransform: "uppercase" as const,
 };
 
 const rcTd = {
   fontSize: 9,
-  color: "#14161A",
+  color: "#111827",
 };
 
 const rcPayLine = {
@@ -813,11 +813,11 @@ function RcDetailRow({
 }) {
   return (
     <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 12, marginBottom: 5 }}>
-      <Text style={{ fontSize: 9, color: "#898E96" }}>{label}</Text>
+      <Text style={{ fontSize: 9, color: "#9CA3AF" }}>{label}</Text>
       <Text
         style={{
           fontSize: 9,
-          color: "#14161A",
+          color: "#111827",
           fontWeight: valueBold ? 500 : 400,
           fontFamily: mono ? "Courier" : undefined,
         }}
@@ -897,7 +897,7 @@ function InvoiceLineItemsPdf({
   const headerCell = {
     fontSize: 7.5,
     fontWeight: 700,
-    color: "#898E96",
+    color: "#9CA3AF",
     textTransform: "uppercase" as const,
     letterSpacing: 0.9,
     paddingVertical: 7,
@@ -914,7 +914,7 @@ function InvoiceLineItemsPdf({
         style={{
           flexDirection: "row",
           borderBottomWidth: 1,
-          borderBottomColor: "#D9D9D2",
+          borderBottomColor: "#DADFE6",
           borderBottomStyle: "solid",
         }}
       >
@@ -931,22 +931,22 @@ function InvoiceLineItemsPdf({
           style={{
             flexDirection: "row",
             borderBottomWidth: 1,
-            borderBottomColor: "#ECECE7",
+            borderBottomColor: "#EBEEF2",
             borderBottomStyle: "solid",
             alignItems: "flex-start",
           }}
         >
           <View style={{ ...colDesc, paddingVertical: 10 }}>
-            <Text style={{ fontSize: 9.5, color: "#14161A", fontWeight: 600 }}>{li.description}</Text>
+            <Text style={{ fontSize: 9.5, color: "#111827", fontWeight: 600 }}>{li.description}</Text>
           </View>
           {showHsn && (
-            <Text style={{ ...cellStyle, ...colHsn, color: "#54585F" }}>
+            <Text style={{ ...cellStyle, ...colHsn, color: "#4B5563" }}>
               {li.hsn_sac_code ?? "—"}
             </Text>
           )}
-          <Text style={{ ...cellStyle, ...colQty, color: "#54585F" }}>{Number(li.quantity)}</Text>
-          <Text style={{ ...cellStyle, ...colRate, color: "#54585F" }}>{fmtNum(Number(li.unit_price))}</Text>
-          <Text style={{ ...cellStyle, ...colTotal, color: "#14161A", fontWeight: 600 }}>
+          <Text style={{ ...cellStyle, ...colQty, color: "#4B5563" }}>{Number(li.quantity)}</Text>
+          <Text style={{ ...cellStyle, ...colRate, color: "#4B5563" }}>{fmtNum(Number(li.unit_price))}</Text>
+          <Text style={{ ...cellStyle, ...colTotal, color: "#111827", fontWeight: 600 }}>
             {fmtNum(Number(li.quantity) * Number(li.unit_price))}
           </Text>
         </View>
@@ -955,23 +955,23 @@ function InvoiceLineItemsPdf({
       <View style={{ alignItems: "flex-end", marginTop: 12 }}>
         <View style={{ width: totalsWidth, gap: 5 }}>
           <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-            <Text style={{ fontSize: 9.5, color: "#898E96" }}>Subtotal</Text>
-            <Text style={{ fontSize: 9.5, color: "#14161A" }}>{fmtNum(subtotal)}</Text>
+            <Text style={{ fontSize: 9.5, color: "#9CA3AF" }}>Subtotal</Text>
+            <Text style={{ fontSize: 9.5, color: "#111827" }}>{fmtNum(subtotal)}</Text>
           </View>
           {discount > 0 ? (
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-              <Text style={{ fontSize: 9.5, color: "#898E96" }}>
+              <Text style={{ fontSize: 9.5, color: "#9CA3AF" }}>
                 {discountType === "percent"
                   ? `Discount (${discountValue}%)`
                   : "Discount"}
               </Text>
-              <Text style={{ fontSize: 9.5, color: "#14161A" }}>−{fmtNum(discount)}</Text>
+              <Text style={{ fontSize: 9.5, color: "#111827" }}>−{fmtNum(discount)}</Text>
             </View>
           ) : null}
           {taxLines.map((line) => (
             <View key={line.label} style={{ flexDirection: "row", justifyContent: "space-between" }}>
-              <Text style={{ fontSize: 9.5, color: "#898E96" }}>{line.label}</Text>
-              <Text style={{ fontSize: 9.5, color: "#14161A" }}>{fmtNum(line.amount)}</Text>
+              <Text style={{ fontSize: 9.5, color: "#9CA3AF" }}>{line.label}</Text>
+              <Text style={{ fontSize: 9.5, color: "#111827" }}>{fmtNum(line.amount)}</Text>
             </View>
           ))}
           <View
@@ -979,23 +979,23 @@ function InvoiceLineItemsPdf({
               flexDirection: "row",
               justifyContent: "space-between",
               borderTopWidth: 1,
-              borderTopColor: "#D9D9D2",
+              borderTopColor: "#DADFE6",
               borderTopStyle: "solid",
               paddingTop: 7,
               marginTop: 3,
             }}
           >
-            <Text style={{ fontFamily: "Chillax", fontSize: 13.5, fontWeight: 600, color: "#14161A", letterSpacing: -0.2 }}>
+            <Text style={{ fontFamily: "Chillax", fontSize: 13.5, fontWeight: 600, color: "#111827", letterSpacing: -0.2 }}>
               {grandLabel ?? `Total due (${currency})`}
             </Text>
-            <Text style={{ fontFamily: "Chillax", fontSize: 13.5, fontWeight: 600, color: "#14161A", letterSpacing: -0.2 }}>
+            <Text style={{ fontFamily: "Chillax", fontSize: 13.5, fontWeight: 600, color: "#111827", letterSpacing: -0.2 }}>
               {fmtNum(total)}
             </Text>
           </View>
           {tdsAmount > 0 ? (
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-              <Text style={{ fontSize: 9.5, color: "#898E96" }}>TDS deduction ({tdsRate}%)</Text>
-              <Text style={{ fontSize: 9.5, color: "#14161A" }}>−{fmtNum(tdsAmount)}</Text>
+              <Text style={{ fontSize: 9.5, color: "#9CA3AF" }}>TDS deduction ({tdsRate}%)</Text>
+              <Text style={{ fontSize: 9.5, color: "#111827" }}>−{fmtNum(tdsAmount)}</Text>
             </View>
           ) : null}
           {tdsAmount > 0 ? (
@@ -1004,14 +1004,14 @@ function InvoiceLineItemsPdf({
                 flexDirection: "row",
                 justifyContent: "space-between",
                 borderTopWidth: 1,
-                borderTopColor: "#D9D9D2",
+                borderTopColor: "#DADFE6",
                 borderTopStyle: "solid",
                 paddingTop: 5,
                 marginTop: 2,
               }}
             >
-              <Text style={{ fontSize: 9.5, color: "#898E96" }}>Net received</Text>
-              <Text style={{ fontSize: 9.5, color: "#14161A" }}>{fmtNum(netReceived)}</Text>
+              <Text style={{ fontSize: 9.5, color: "#9CA3AF" }}>Net received</Text>
+              <Text style={{ fontSize: 9.5, color: "#111827" }}>{fmtNum(netReceived)}</Text>
             </View>
           ) : null}
         </View>

@@ -216,7 +216,7 @@ export function DeliveryNoteSheet({
         {bundleUrl && (
           <div style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
             <div className="qr" />
-            <div style={{ fontSize: 11.5, color: "#54585F", lineHeight: 1.55 }}>
+            <div style={{ fontSize: 11.5, color: "#4B5563", lineHeight: 1.55 }}>
               <div className="party__label" style={{ marginBottom: 6 }}>Open delivery bundle</div>
               <div>{bundleUrl}</div>
               {bundleExpiry && <div>Expires {bundleExpiry}</div>}

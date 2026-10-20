@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     fontFamily: "Helvetica",
     fontSize: 11,
     padding: 40,
-    color: "#14161A",
+    color: "#111827",
   },
   title: {
     fontSize: 20,

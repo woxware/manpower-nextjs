@@ -12,11 +12,11 @@ const MARGIN_H = 48;
 const MARGIN_TOP = 56;
 const MARGIN_BOTTOM = 64;
 const ACCENT = "#10B981";
-const DARK = "#14161A";
-const MUTED = "#898E96";
-const DIM = "#54585F";
-const BORDER = "#ECECE7";
-const SOFT_BG = "#F8F8F6";
+const DARK = "#111827";
+const MUTED = "#9CA3AF";
+const DIM = "#4B5563";
+const BORDER = "#EBEEF2";
+const SOFT_BG = "#F8FAFC";
 
 // ─── Cover Page ────────────────────────────────────────────────────────────
 
@@ -53,7 +53,7 @@ function CoverPage({
     <Page
       size="A4"
       style={{
-        backgroundColor: "#FBFBF9",
+        backgroundColor: "#F8FAFC",
         fontFamily: "Inter",
         padding: 0,
         position: "relative",

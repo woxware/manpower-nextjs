@@ -123,9 +123,9 @@
 
 ### Task 4: Sweep neutral literals (full slate swap)
 
-- [ ] **Step 1:** Apply the solid-equivalent column of the neutral table across `app/ components/ lib/ config/ hooks/` — `#14161A→#111827`, `#54585F→#4B5563`, `#898E96→#9CA3AF`, `#FBFBF9→#F8FAFC`, `#F4F4F1→#F1F5F9`, `#EFEFEC→#E2E8F0`, `#ECECE7→#EBEEF2`, `#D9D9D2→#DADFE6`, `#E9E9E4→#E2E8F0`, `#F8F8F6→#F8FAFC` (PDF/SVG contexts keep solid values; CSS contexts may use `var(--…)`).
-- [ ] **Step 2:** `grep -ri "14161a\|54585f\|898e96\|ecece7\|d9d9d2\|fbfbf9\|f4f4f1\|efefec"` → clean outside `.next/` and `node_modules/`.
-- [ ] **Step 3:** `npm test` + `npm run lint` → commit `refactor(brand): slate neutrals sweep`.
+- [x] **Step 1:** Apply the solid-equivalent column of the neutral table across `app/ components/ lib/ config/ hooks/` — `#14161A→#111827`, `#54585F→#4B5563`, `#898E96→#9CA3AF`, `#FBFBF9→#F8FAFC`, `#F4F4F1→#F1F5F9`, `#EFEFEC→#E2E8F0`, `#ECECE7→#EBEEF2`, `#D9D9D2→#DADFE6`, `#E9E9E4→#E2E8F0`, `#F8F8F6→#F8FAFC` (PDF/SVG contexts keep solid values; CSS contexts may use `var(--…)`).
+- [x] **Step 2:** Audit grep returns 0 (the 8 `rgba(20,22,26,…)` shadow values are intentional per Global Constraints); `grep -ri` "14161a\|54585f\|898e96\|ecece7\|d9d9d2\|fbfbf9\|f4f4f1\|efefec"` → clean outside `.next/` and `node_modules/`.
+- [x] **Step 3:** `npm test` + `npm run lint` → commit `refactor(brand): slate neutrals sweep`.
 
 ### Task 5: Name → ManpowerHub
 

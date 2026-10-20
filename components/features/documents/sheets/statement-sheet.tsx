@@ -214,7 +214,7 @@ export function StatementSheet({
               key={i}
               style={
                 row.isClosingRow
-                  ? { background: "#FBFBF9", fontWeight: 500 }
+                  ? { background: "#F8FAFC", fontWeight: 500 }
                   : undefined
               }
             >
@@ -257,7 +257,7 @@ export function StatementSheet({
         leftTitle={closingBalance > 0 ? "Action required" : "No balance due"}
         leftContent={
           actionRequiredNote ? (
-            <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6, marginTop: 6 }}>
+            <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6, marginTop: 6 }}>
               {actionRequiredNote}
             </div>
           ) : undefined

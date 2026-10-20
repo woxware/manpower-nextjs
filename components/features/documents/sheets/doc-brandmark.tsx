@@ -28,7 +28,7 @@ export function DocBrandmark({
       className="brandmark"
       style={
         inverted
-          ? { background: "#fff", color: "#14161A" }
+          ? { background: "#fff", color: "#111827" }
           : { background: accent, color: "#fff" }
       }
     >
