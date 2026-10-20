@@ -108,10 +108,10 @@
 
 ### Task 2: Ambient palette + onboarding step colours + tests
 
-- [ ] **Step 1:** Apply the ambient table in `components/shared/ambient/palette.ts` (keep exported key names `blue/violet/teal/amber/rose` so imports don't break; update the doc comment).
-- [ ] **Step 2:** `components/onboarding/onboarding-complete-loader.tsx` — `STEP_COLOR` workspace → `#10B981`, `client` → `#6366F1`, `invoicing` → `#0EA5E9`, `dashboard` → `#F59E0B`, `ready` → `#EF4444`; update the comment "brand blue" → "brand green".
-- [ ] **Step 3:** Update `components/shared/ambient/palette.test.ts` expected hexes and the gradient-order test (`#10B981 → #6366F1 → #0EA5E9`).
-- [ ] **Step 4:** `npm test` green → commit `feat(brand): ambient palette + onboarding steps → ManpowerHub greens`.
+- [x] **Step 1:** Apply the ambient table in `components/shared/ambient/palette.ts` (keep exported key names `blue/violet/teal/amber/rose` so imports don't break; update the doc comment).
+- [x] **Step 2:** `components/onboarding/onboarding-complete-loader.tsx` — `STEP_COLOR` workspace → `#10B981`, `client` → `#6366F1`, `invoicing` → `#0EA5E9`, `dashboard` → `#F59E0B`, `ready` → `#EF4444`; update the comment "brand blue" → "brand green".
+- [x] **Step 3:** Update `components/shared/ambient/palette.test.ts` expected hexes and the gradient-order test; `GRADIENT_STOPS` is now `#10B981 → #6366F1 → #0EA5E9`.
+- [x] **Step 4:** `npm test` green → commit `feat(brand): ambient palette + onboarding steps → ManpowerHub greens`.
 
 ### Task 3: Sweep accent literals (24 files)
 

@@ -45,11 +45,11 @@ import {
 
 /** Module palette — each step maps to a real Manpower module colour. */
 const STEP_COLOR: Record<SetupStepId, string> = {
-  workspace: "#3550E0", // brand blue
-  client: "#7C5CFF", // violet — clients
-  invoicing: "#12B5A6", // teal — finance / invoicing
-  dashboard: "#F5A524", // amber — dashboard / tasks
-  ready: "#F2557A", // rose — celebrate
+  workspace: "#10B981", // brand green
+  client: "#6366F1", // indigo — clients
+  invoicing: "#0EA5E9", // sky — finance / invoicing
+  dashboard: "#F59E0B", // amber — dashboard / tasks
+  ready: "#EF4444", // red — celebrate
 };
 
 const STEP_ICON: Record<SetupStepId, LucideIcon> = {
