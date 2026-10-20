@@ -94,7 +94,7 @@ export const WithFieldSet: Story = {
       <FieldGroup>
         <Field>
           <FieldLabel htmlFor="company">Company name</FieldLabel>
-          <Input id="company" placeholder="Manpower Inc." />
+          <Input id="company" placeholder="ManpowerHub Inc." />
         </Field>
         <FieldSeparator>or</FieldSeparator>
         <Field>

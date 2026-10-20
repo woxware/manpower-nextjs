@@ -99,7 +99,7 @@ export const Top: Story = {
       <SheetContent side="top">
         <SheetHeader>
           <SheetTitle>System notification</SheetTitle>
-          <SheetDescription>A new update is available for Manpower.</SheetDescription>
+          <SheetDescription>A new update is available for ManpowerHub.</SheetDescription>
         </SheetHeader>
         <SheetFooter>
           <SheetClose render={<Button variant="outline">Dismiss</Button>} />

@@ -32,7 +32,7 @@ export function AuthShell({
             className="h-[3px] w-12 rounded-full bg-[length:300%_100%]"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #3550E0, #7C5CFF, #12B5A6, #F2557A)",
+                "linear-gradient(90deg, #10B981, #6366F1, #0EA5E9, #EF4444)",
             }}
           />
           <div className="w-full rounded-3xl border border-[var(--border)] bg-[var(--bg-surface)]/80 p-6 shadow-[var(--shadow-lg)] backdrop-blur-xl sm:p-10">
@@ -41,7 +41,7 @@ export function AuthShell({
         </div>
       </main>
       <footer className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-2 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-xs text-[var(--fg-3)] sm:flex-row sm:gap-3 sm:py-6">
-        <span>© {year} Manpower</span>
+        <span>© {year} ManpowerHub</span>
         <nav className="flex items-center gap-4 sm:gap-6">
           <LegalPolicyLink
             policy="privacy"

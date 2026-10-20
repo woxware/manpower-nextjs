@@ -166,7 +166,7 @@ export function CreateApiKeyDialog({
         <DialogHeader>
           <DialogTitle>Create API key</DialogTitle>
           <DialogDescription>
-            Your Manpower key unlocks the REST API and the MCP server for
+            Your ManpowerHub key unlocks the REST API and the MCP server for
             Claude, Cursor, and other tools. Show it once — it won&apos;t be
             stored in plaintext.
           </DialogDescription>

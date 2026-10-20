@@ -19,6 +19,7 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import {
+  Building2,
   CalendarRange,
   Check,
   ChevronRight,
@@ -27,6 +28,7 @@ import {
   FileText,
   FolderKanban,
   GripVertical,
+  HardHat,
   LayoutDashboard,
   ListChecks,
   Package,
@@ -35,6 +37,7 @@ import {
   Settings,
   Settings2,
   Timer,
+  Truck,
   TrendingUp,
   Users,
 } from "lucide-react";
@@ -53,6 +56,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { CollapsedNavFlyout } from "@/components/layout/collapsed-nav-flyout";
+import { Wordmark } from "@/components/shared/brand-lockup";
 import { branding } from "@/config/branding";
 import { DOCUMENT_TYPE_NAV, slugFromType } from "@/lib/documents/document-routes";
 import { useActiveDocumentType } from "@/lib/documents/active-type-state";
@@ -107,6 +111,14 @@ const NAV_SECTIONS: NavSectionDef[] = [
     ],
   },
   {
+    label: "Manpower",
+    items: [
+      { id: "workers",         label: "Workers",         href: "/workers",         Icon: HardHat },
+      { id: "suppliers",       label: "Suppliers",       href: "/suppliers",       Icon: Truck },
+      { id: "project-clients", label: "Project clients", href: "/project-clients", Icon: Building2 },
+    ],
+  },
+  {
     label: "Money",
     items: [
       { id: "finance", label: "Finance", href: "/finance", Icon: TrendingUp },
@@ -134,7 +146,7 @@ const PINNED_TYPE_ICON: Record<PinnedItem["item_type"], React.ElementType> = {
 
 const PINNED_TYPE_COLOR: Record<PinnedItem["item_type"], string> = {
   project:  "#E0995E",
-  client:   "#6E83F0",
+  client:   "#6366F1",
   document: "#9B7FD8",
   task:     "#3FB87D",
 };
@@ -358,12 +370,12 @@ export function AppSidebar({
       >
         <Link
           href="/dashboard"
-          aria-label="Manpower home"
+          aria-label="ManpowerHub home"
           className="grid size-7 shrink-0 place-items-center overflow-hidden rounded-[7px]"
         >
           <Image
             src={branding.mark}
-            alt="Manpower"
+            alt="ManpowerHub"
             width={28}
             height={28}
             priority
@@ -373,25 +385,9 @@ export function AppSidebar({
 
         {!collapsed && (
           <div className="flex h-7 items-center">
-            {/* Expanded follows the app theme, so render both and let the
-                dark variant (`[data-theme="dark"] *`) pick one. */}
-            <Image
-              src={branding.wordmarkOnLightBg}
-              alt="Manpower"
-              width={88}
-              height={18}
-              priority
-              className="block dark:hidden"
-            />
-            <Image
-              src={branding.wordmarkOnDarkBg}
-              alt=""
-              aria-hidden
-              width={88}
-              height={18}
-              priority
-              className="hidden dark:block"
-            />
+            {/* Theme-aware wordmark: type coloured by `var(--fg)`, so one node
+                works in both themes (replaces the old light/dark image pair). */}
+            <Wordmark />
           </div>
         )}
       </div>

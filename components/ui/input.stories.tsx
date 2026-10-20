@@ -26,7 +26,7 @@ export const Number: Story = {
 };
 
 export const WithValue: Story = {
-  args: { defaultValue: "Manpower Inc." },
+  args: { defaultValue: "ManpowerHub Inc." },
 };
 
 export const Disabled: Story = {

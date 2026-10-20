@@ -1,7 +1,7 @@
 import type { ClientRow, LineItemRow, ProjectListRow, ServiceRow } from "@/types";
 import type { VariableContext } from "@/lib/documents/variables";
 
-/** Realistic Manpower data shared by the editor stories. */
+/** Realistic ManpowerHub data shared by the editor stories. */
 export const client = (id: string, name: string, contact: string, currency: string): ClientRow => ({
   id, user_id: "u", name, contact_name: contact, website: null, email: `${contact.split(" ")[0].toLowerCase()}@${name.split(" ")[0].toLowerCase()}.studio`,
   billing_email: null, phone: null, company: name, address: "Business Bay, Dubai", currency, tax_id: null, payment_terms_days: 30,
@@ -22,7 +22,7 @@ export const LINES = [row("l1", "Brand identity design", "Logo, colour system, t
 export const CTX: VariableContext = {
   client: null,
   project: null,
-  brand: { business_name: "Junaid Studio", primary_color: "#3550E0", email_signature: null, logo_url: null },
+  brand: { business_name: "Junaid Studio", primary_color: "#10B981", email_signature: null, logo_url: null },
   sender: { name: "Junaid P", company_name: "Junaid Studio", email: "hello@junaid.studio", address_line1: "Dubai", address_line2: null, city: "Dubai", region: null, postal_code: null, country: "AE", vat_number: "100234567800003", gstin: null, vat_reg_no: null },
   now: new Date("2026-10-09"),
 };

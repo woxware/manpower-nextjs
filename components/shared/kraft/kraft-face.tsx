@@ -72,7 +72,7 @@ function accentOpacity(params: KraftParams, accent: KraftAccent): string {
 }
 
 /**
- * Kraft, Manpower's assistant: a flat squircle in the brand blue with two
+ * Kraft, ManpowerHub's assistant: a flat squircle in the brand green with two
  * pill eyes. All emotion comes from eye shape and body motion (see
  * `lib/kraft/emotions.ts` and `lib/kraft/rig.ts`). Values are written as SVG
  * attributes from a shared rAF ticker — never inline styles — and the face

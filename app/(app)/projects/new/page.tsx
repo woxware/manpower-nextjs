@@ -81,7 +81,7 @@ export default async function NewProjectPage({
           backHref="/projects"
           backLabel="Projects"
           title="New project"
-          description="Pick a Manpower starter or your saved template, or start blank. Then connect work to a client, set dates and budget, and break deliverables into tasks on the project page."
+          description="Pick a ManpowerHub starter or your saved template, or start blank. Then connect work to a client, set dates and budget, and break deliverables into tasks on the project page."
         />
         <NewProjectView
           clients={clients}

@@ -243,7 +243,7 @@ export function BrandKitForm({
   );
 
   const ACCENT_SWATCHES = [
-    "#3550E0",
+    "#10B981",
     "#1F8A52",
     "#B36A12",
     "#C13838",
@@ -737,7 +737,7 @@ export function BrandKitForm({
             <CardHeader className="pb-4">
               <CardTitle className="text-base">Email signature</CardTitle>
               <CardDescription>
-                Appended to emails sent through Manpower.
+                Appended to emails sent through ManpowerHub.
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0">

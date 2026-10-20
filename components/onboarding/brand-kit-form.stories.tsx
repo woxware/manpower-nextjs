@@ -8,7 +8,7 @@ const brandKit: BrandKitRow = {
   id: "storybook-brand-kit",
   user_id: "storybook-user",
   logo_url: null,
-  primary_color: "#3550E0",
+  primary_color: "#10B981",
   secondary_color: "#F5F7FF",
   font: "Inter",
   email_signature: "Best regards,\nAmina Rahman\nNorthstar Creative",

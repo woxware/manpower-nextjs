@@ -12,11 +12,11 @@ describe("AMBIENT_COLORS", () => {
 
   it("matches the documented module palette exactly", () => {
     expect(AMBIENT_COLORS).toEqual({
-      blue: "#3550E0",
-      violet: "#7C5CFF",
-      teal: "#12B5A6",
-      amber: "#F5A524",
-      rose: "#F2557A",
+      blue: "#10B981",
+      violet: "#6366F1",
+      teal: "#0EA5E9",
+      amber: "#F59E0B",
+      rose: "#EF4444",
     });
   });
 });
@@ -34,11 +34,11 @@ describe("AMBIENT_PALETTE", () => {
 });
 
 describe("GRADIENT_STOPS", () => {
-  it("is blue -> violet -> rose, matching the headline gradient", () => {
+  it("is blue -> violet -> teal, matching the headline gradient", () => {
     expect(GRADIENT_STOPS).toEqual([
       AMBIENT_COLORS.blue,
       AMBIENT_COLORS.violet,
-      AMBIENT_COLORS.rose,
+      AMBIENT_COLORS.teal,
     ]);
   });
 });

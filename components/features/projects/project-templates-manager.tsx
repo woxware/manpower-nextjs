@@ -97,7 +97,7 @@ export function ProjectTemplatesManager({
         {systemTemplates.length > 0 ? (
           <section className="flex flex-col gap-4">
             <ProjectTemplateSectionHeading icon={<BookTemplate className="size-3.5" />}>
-              Manpower starters
+              ManpowerHub starters
             </ProjectTemplateSectionHeading>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {systemTemplates.map((template) => (

@@ -166,7 +166,7 @@ export function InvoiceSheet({
         rightTitle="Notes"
         rightContent={
           <>
-            {notesFooter && <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6 }}>{notesFooter}</div>}
+            {notesFooter && <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6 }}>{notesFooter}</div>}
             {payOnlineUrl && (
               <div style={{ marginTop: 14 }}>
                 <DocStatusPill label={`Pay online · ${payOnlineUrl}`} variant="success" dot />

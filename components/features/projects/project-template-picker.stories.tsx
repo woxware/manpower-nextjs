@@ -51,7 +51,7 @@ const meta: Meta<typeof ProjectTemplatePicker> = {
     docs: {
       description: {
         component:
-          "Card grid to pick a Manpower starter or saved project template when creating a new project. Blank project clears the selection. Milestones and tasks seed after the project is created.",
+          "Card grid to pick a ManpowerHub starter or saved project template when creating a new project. Blank project clears the selection. Milestones and tasks seed after the project is created.",
       },
     },
   },

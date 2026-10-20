@@ -42,7 +42,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
     page: {
       fontFamily,
       fontSize: 10,
-      color: "#14161A",
+      color: "#111827",
       paddingTop: 0,
       paddingBottom: 60,
       paddingHorizontal: 0,
@@ -61,7 +61,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
     brandmark: {
       width: 28,
       height: 28,
-      backgroundColor: "#14161A",
+      backgroundColor: "#111827",
       borderRadius: 7,
       alignItems: "center",
       justifyContent: "center",
@@ -88,12 +88,12 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontFamily: "Chillax",
       fontSize: 12,
       fontWeight: 600,
-      color: "#14161A",
+      color: "#111827",
       marginBottom: 2,
     },
     orgContact: {
       fontSize: 8.5,
-      color: "#54585F",
+      color: "#4B5563",
       lineHeight: 1.5,
     },
     headerRight: {
@@ -103,12 +103,12 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontFamily: "Chillax",
       fontSize: 22,
       fontWeight: 600,
-      color: "#14161A",
+      color: "#111827",
       letterSpacing: -0.7,
     },
     docNumber: {
       fontSize: 9,
-      color: "#54585F",
+      color: "#4B5563",
       marginTop: 4,
       fontFamily: "Courier",
     },
@@ -116,12 +116,12 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       marginTop: 6,
       paddingHorizontal: 8,
       paddingVertical: 3,
-      backgroundColor: "#ECECE7",
+      backgroundColor: "#EBEEF2",
       borderRadius: 100,
     },
     statusPillText: {
       fontSize: 8,
-      color: "#54585F",
+      color: "#4B5563",
       fontWeight: 600,
     },
 
@@ -142,19 +142,19 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontSize: 7.5,
       fontWeight: 600,
       letterSpacing: 0.9,
-      color: "#898E96",
+      color: "#9CA3AF",
       textTransform: "uppercase",
       marginBottom: 6,
     },
     metaValue: {
       fontSize: 10,
-      color: "#14161A",
+      color: "#111827",
       lineHeight: 1.5,
       fontWeight: 600,
     },
     metaMuted: {
       fontSize: 9,
-      color: "#54585F",
+      color: "#4B5563",
       lineHeight: 1.55,
     },
 
@@ -242,7 +242,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       paddingTop: 18,
       gap: 24,
       borderTopWidth: 1,
-      borderTopColor: "#ECECE7",
+      borderTopColor: "#EBEEF2",
       borderTopStyle: "solid",
     },
     docFooterLeft: {
@@ -255,7 +255,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontSize: 7.5,
       fontWeight: 600,
       letterSpacing: 0.9,
-      color: "#898E96",
+      color: "#9CA3AF",
       textTransform: "uppercase",
       marginBottom: 6,
     },
@@ -266,16 +266,16 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
     },
     docFooterPayLabel: {
       fontSize: 8.5,
-      color: "#898E96",
+      color: "#9CA3AF",
     },
     docFooterPayValue: {
       fontSize: 8.5,
-      color: "#14161A",
+      color: "#111827",
       fontWeight: 600,
     },
     docFooterText: {
       fontSize: 8.5,
-      color: "#54585F",
+      color: "#4B5563",
       lineHeight: 1.55,
     },
 
@@ -293,7 +293,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontSize: 7,
       letterSpacing: 0.6,
       textTransform: "uppercase",
-      color: "#898E96",
+      color: "#9CA3AF",
     },
 
     // Page marker — matches web .page-num
@@ -310,7 +310,7 @@ export function makePdfStyles(primaryColor: string, fontFamily: string) {
       fontSize: 7.5,
       letterSpacing: 0.6,
       textTransform: "uppercase",
-      color: "#898E96",
+      color: "#9CA3AF",
     },
 
     // Legacy — kept for tiptap-to-pdf compatibility

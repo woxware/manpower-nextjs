@@ -6,7 +6,7 @@ import { getCurrentSubscription, getSubscriptionInvoices } from "@/lib/billing/q
 import { getClientCountForUser, getDocCountThisMonthForUser } from "@/lib/dashboard/shell-count-queries";
 import type { PlanTier } from "@/config/plans";
 
-export const metadata = { title: "Billing & Plans — Manpower" };
+export const metadata = { title: "Billing & Plans — ManpowerHub" };
 
 export default async function BillingPage() {
   const { supabase, user } = await getServerContext();

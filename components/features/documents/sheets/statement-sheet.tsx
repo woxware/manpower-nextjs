@@ -170,7 +170,7 @@ export function StatementSheet({
       <div className="party__label" style={{ marginBottom: 8 }}>Aging — outstanding balance</div>
       <div className="aging-bar">
         <span style={{ width: `${agingPct.current}%`, background: "#1F8A52" }} />
-        <span style={{ width: `${agingPct.days1to30}%`, background: "#3550E0" }} />
+        <span style={{ width: `${agingPct.days1to30}%`, background: "#10B981" }} />
         <span style={{ width: `${agingPct.days31to60}%`, background: "#B36A12" }} />
         <span style={{ width: `${agingPct.days60plus}%`, background: "#C13838" }} />
       </div>
@@ -180,7 +180,7 @@ export function StatementSheet({
           Current · {formatAgingValue(aging.current, currency)}
         </div>
         <div className="item">
-          <span className="swatch" style={{ background: "#3550E0" }} />
+          <span className="swatch" style={{ background: "#10B981" }} />
           1–30d · {formatAgingValue(aging.days1to30, currency)}
         </div>
         <div className="item">
@@ -214,7 +214,7 @@ export function StatementSheet({
               key={i}
               style={
                 row.isClosingRow
-                  ? { background: "#FBFBF9", fontWeight: 500 }
+                  ? { background: "#F8FAFC", fontWeight: 500 }
                   : undefined
               }
             >
@@ -257,7 +257,7 @@ export function StatementSheet({
         leftTitle={closingBalance > 0 ? "Action required" : "No balance due"}
         leftContent={
           actionRequiredNote ? (
-            <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6, marginTop: 6 }}>
+            <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6, marginTop: 6 }}>
               {actionRequiredNote}
             </div>
           ) : undefined

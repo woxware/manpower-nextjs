@@ -18,7 +18,7 @@ export function ApiUpgradePrompt() {
             API keys are a Pro feature
           </p>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Upgrade to Pro to create API keys and call the Manpower REST API
+            Upgrade to Pro to create API keys and call the ManpowerHub REST API
             from your own tools, scripts and automations. Connecting Claude
             doesn&apos;t need a key — use the steps above.
           </p>

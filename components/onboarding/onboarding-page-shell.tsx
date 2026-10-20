@@ -71,7 +71,7 @@ export function OnboardingPageShell({
       </main>
 
       <footer className="relative z-10 flex shrink-0 flex-col items-center justify-between gap-3 px-6 py-6 text-xs text-[var(--fg-3)] sm:flex-row sm:px-10">
-        <span>© {year} Manpower</span>
+        <span>© {year} ManpowerHub</span>
         <nav className="flex items-center gap-6">
           <LegalPolicyLink
             policy="privacy"

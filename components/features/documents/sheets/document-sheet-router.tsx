@@ -80,7 +80,7 @@ type DocumentSheetRouterProps = {
 function NotImplementedSheet({ label }: { label: string }) {
   return (
     <DocumentSheet>
-      <div style={{ padding: 32, color: "#54585F", fontSize: 13 }}>
+      <div style={{ padding: 32, color: "#4B5563", fontSize: 13 }}>
         {label} sheet data not provided.
       </div>
     </DocumentSheet>
@@ -246,7 +246,7 @@ export function DocumentSheetRouter({
   // "other" — no structured layout
   return (
     <DocumentSheet>
-      <div style={{ padding: 32, color: "#54585F", fontSize: 13 }}>
+      <div style={{ padding: 32, color: "#4B5563", fontSize: 13 }}>
         This document type does not have a structured layout.
       </div>
     </DocumentSheet>

@@ -18,7 +18,7 @@ export default meta;
 type Story = StoryObj<typeof WorkspaceFrame>;
 
 const Block = ({ label, h }: { label: string; h: string }) => (
-  <div className={`grid w-full max-w-[800px] place-items-center rounded-md bg-white text-[12px] text-[#54585F] ${h}`}>{label}</div>
+  <div className={`grid w-full max-w-[800px] place-items-center rounded-md bg-white text-[12px] text-[#4B5563] ${h}`}>{label}</div>
 );
 
 function Demo({ desktop }: { desktop: boolean }) {

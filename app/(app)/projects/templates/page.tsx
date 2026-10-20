@@ -18,7 +18,7 @@ export default async function ProjectTemplatesPage() {
           backHref="/projects"
           backLabel="Projects"
           title="Project templates"
-          description="Start new projects from Manpower starter templates or your saved structures. Save a template from any project menu to add milestones and tasks you reuse often."
+          description="Start new projects from ManpowerHub starter templates or your saved structures. Save a template from any project menu to add milestones and tasks you reuse often."
         />
 
         <ProjectTemplatesManager templates={templates} />

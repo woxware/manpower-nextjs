@@ -5,8 +5,8 @@ export const PRIVACY_SECTIONS: LegalDocumentSection[] = [
   {
     title: "Overview",
     paragraphs: [
-      "This Privacy Policy explains how Manpower collects, uses, and protects personal data when you use our application.",
-      "Manpower is the data controller for account and workspace data you store in the app.",
+      "This Privacy Policy explains how ManpowerHub collects, uses, and protects personal data when you use our application.",
+      "ManpowerHub is the data controller for account and workspace data you store in the app.",
     ],
   },
   {

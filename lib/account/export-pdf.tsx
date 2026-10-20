@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     fontFamily: "Helvetica",
     fontSize: 11,
     padding: 40,
-    color: "#14161A",
+    color: "#111827",
   },
   title: {
     fontSize: 20,
@@ -59,7 +59,7 @@ export function AccountExportPdf({ bundle, email }: Props) {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>Manpower data export</Text>
+        <Text style={styles.title}>ManpowerHub data export</Text>
         <Text style={styles.subtitle}>
           Account: {email ?? bundle.userId} · Exported {bundle.exportedAt}
         </Text>

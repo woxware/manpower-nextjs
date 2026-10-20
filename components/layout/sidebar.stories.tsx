@@ -82,7 +82,7 @@ export const ExpandedDark: Story = {
     docs: {
       description: {
         story:
-          "Expanded follows the app theme: a light panel in light mode, this dark panel in dark mode, with the white wordmark.",
+          "Expanded follows the app theme: a light panel in light mode, this dark panel in dark mode, with the ManpowerHub mark and its theme-aware text wordmark.",
       },
     },
   },

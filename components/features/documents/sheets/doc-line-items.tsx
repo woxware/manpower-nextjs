@@ -47,7 +47,7 @@ export function DocLineItems({
               <td className="rate">{formatSheetAmount(item.unitPrice)}</td>
               <td
                 className="total"
-                style={item.isOptional ? { color: "#898E96" } : undefined}
+                style={item.isOptional ? { color: "#9CA3AF" } : undefined}
               >
                 {statusMode ? (
                   <span style={{ color: "#1F8A52", fontWeight: 500 }}>Delivered</span>

@@ -44,7 +44,7 @@ export function CompanionPanel({
       <div className="relative z-10 w-full max-w-[460px] px-10 xl:px-12">
         <div className="auth-preview-card" style={{ animationDelay: "0ms" }}>
           <div className="mb-3.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--fg-3)]">
-            Manpower · v1
+            ManpowerHub · v1
           </div>
           <h2 className="mb-7 font-heading text-[2.25rem] font-semibold leading-[1.07] tracking-[-0.03em]">
             <GradientText as="span">{companionHeadline(variant)}</GradientText>

@@ -23,7 +23,7 @@ export const Default: Story = {
   args: {
     logoUrl: null,
     businessName: "Manpower Studio",
-    primaryColor: "#3550E0",
+    primaryColor: "#10B981",
     docTypeLabel: "Invoice",
     docTitle: "Brand Refresh 2026",
     docNumber: "INV-0042",
@@ -45,7 +45,7 @@ export const NoNumber: Story = {
   args: {
     logoUrl: null,
     businessName: "Manpower Studio",
-    primaryColor: "#3550E0",
+    primaryColor: "#10B981",
     docTypeLabel: "Proposal",
     docTitle: "Marketing Site Proposal",
     docNumber: null,

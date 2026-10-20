@@ -43,13 +43,13 @@ import {
  * deterministic and can be frozen for Storybook / tests.
  */
 
-/** Module palette — each step maps to a real Manpower module colour. */
+/** Module palette — each step maps to a real ManpowerHub module colour. */
 const STEP_COLOR: Record<SetupStepId, string> = {
-  workspace: "#3550E0", // brand blue
-  client: "#7C5CFF", // violet — clients
-  invoicing: "#12B5A6", // teal — finance / invoicing
-  dashboard: "#F5A524", // amber — dashboard / tasks
-  ready: "#F2557A", // rose — celebrate
+  workspace: "#10B981", // brand green
+  client: "#6366F1", // indigo — clients
+  invoicing: "#0EA5E9", // sky — finance / invoicing
+  dashboard: "#F59E0B", // amber — dashboard / tasks
+  ready: "#EF4444", // red — celebrate
 };
 
 const STEP_ICON: Record<SetupStepId, LucideIcon> = {
@@ -139,7 +139,7 @@ export function OnboardingCompleteLoader({
         </span>
         <h1 className={ONBOARDING_TITLE_CLASS}>
           Building{" "}
-          <span className="bg-gradient-to-r from-[#3550E0] via-[#7C5CFF] to-[#F2557A] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#10B981] via-[#6366F1] to-[#0EA5E9] bg-clip-text text-transparent">
             {headlineName ? `${headlineName}’s` : "your"} workspace
           </span>
         </h1>
@@ -167,7 +167,7 @@ export function OnboardingCompleteLoader({
           aria-valuenow={Math.round(progress * 100)}
         >
           <motion.div
-            className="h-full rounded-full bg-gradient-to-r from-[#3550E0] via-[#7C5CFF] via-[#12B5A6] to-[#F2557A] bg-[length:300%_100%]"
+            className="h-full rounded-full bg-gradient-to-r from-[#10B981] via-[#6366F1] via-[#0EA5E9] to-[#EF4444] bg-[length:300%_100%]"
             initial={false}
             animate={{
               width: `${Math.round(progress * 100)}%`,
@@ -350,16 +350,16 @@ function LivingDashboard({
       <div className="w-[300px] rounded-[var(--radius-xl)] border border-[var(--accent-soft-2)] bg-[var(--bg-surface)] p-3.5 shadow-[var(--shadow-lg)]">
         {/* window chrome */}
         <div className="mb-3 flex items-center gap-1.5">
-          <span className="size-2 rounded-full bg-[#F2557A]" />
-          <span className="size-2 rounded-full bg-[#F5A524]" />
-          <span className="size-2 rounded-full bg-[#12B5A6]" />
+          <span className="size-2 rounded-full bg-[#EF4444]" />
+          <span className="size-2 rounded-full bg-[#F59E0B]" />
+          <span className="size-2 rounded-full bg-[#0EA5E9]" />
           <span className="ml-2 h-2 w-20 rounded-full bg-[var(--accent-soft-2)]" />
         </div>
 
         <div className="grid grid-cols-2 gap-2.5">
           {/* Revenue KPI — counts up */}
           <motion.div
-            className="col-span-1 flex flex-col gap-1 rounded-[var(--radius-md)] bg-[#12B5A6]/10 p-2.5"
+            className="col-span-1 flex flex-col gap-1 rounded-[var(--radius-md)] bg-[#0EA5E9]/10 p-2.5"
             initial={false}
             animate={tileIn(2)}
             transition={tileSpring}
@@ -375,7 +375,7 @@ function LivingDashboard({
 
           {/* Donut ring — sweeps to fill */}
           <motion.div
-            className="col-span-1 flex items-center gap-2.5 rounded-[var(--radius-md)] bg-[#7C5CFF]/10 p-2.5"
+            className="col-span-1 flex items-center gap-2.5 rounded-[var(--radius-md)] bg-[#6366F1]/10 p-2.5"
             initial={false}
             animate={tileIn(2)}
             transition={tileSpring}
@@ -393,13 +393,13 @@ function LivingDashboard({
 
           {/* Client chips — pop in */}
           <motion.div
-            className="col-span-2 flex items-center justify-between rounded-[var(--radius-md)] bg-[#3550E0]/10 p-2.5"
+            className="col-span-2 flex items-center justify-between rounded-[var(--radius-md)] bg-[#10B981]/10 p-2.5"
             initial={false}
             animate={tileIn(1)}
             transition={tileSpring}
           >
             <div className="flex flex-col">
-              <span className="text-[10px] font-medium uppercase tracking-wide text-[#3550E0]">
+              <span className="text-[10px] font-medium uppercase tracking-wide text-[#10B981]">
                 Clients
               </span>
               <span className="font-heading text-base font-semibold leading-none text-foreground">
@@ -407,7 +407,7 @@ function LivingDashboard({
               </span>
             </div>
             <div className="flex -space-x-2">
-              {["#3550E0", "#7C5CFF", "#12B5A6"].map((c, i) => (
+              {["#10B981", "#6366F1", "#0EA5E9"].map((c, i) => (
                 <motion.span
                   key={c}
                   className="flex size-6 items-center justify-center rounded-full border-2 border-[var(--bg-surface)] text-[9px] font-bold text-white"
@@ -437,7 +437,7 @@ function LivingDashboard({
 
           {/* Sparkline — draws itself */}
           <motion.div
-            className="col-span-1 flex flex-col gap-1.5 rounded-[var(--radius-md)] bg-[#F5A524]/10 p-2.5"
+            className="col-span-1 flex flex-col gap-1.5 rounded-[var(--radius-md)] bg-[#F59E0B]/10 p-2.5"
             initial={false}
             animate={tileIn(3)}
             transition={tileSpring}
@@ -450,12 +450,12 @@ function LivingDashboard({
 
           {/* Bar chart — bars grow up */}
           <motion.div
-            className="col-span-1 flex flex-col gap-1.5 rounded-[var(--radius-md)] bg-[#3550E0]/10 p-2.5"
+            className="col-span-1 flex flex-col gap-1.5 rounded-[var(--radius-md)] bg-[#10B981]/10 p-2.5"
             initial={false}
             animate={tileIn(3)}
             transition={tileSpring}
           >
-            <span className="text-[10px] font-medium uppercase tracking-wide text-[#3550E0]">
+            <span className="text-[10px] font-medium uppercase tracking-wide text-[#10B981]">
               Hours
             </span>
             <BarChart grow={barGrow} reduced={reduced} />
@@ -476,7 +476,7 @@ function DonutRing({ pct }: { pct: number }) {
         cy={17}
         r={r}
         fill="none"
-        stroke="#7C5CFF22"
+        stroke="#6366F122"
         strokeWidth={4}
       />
       <circle
@@ -484,7 +484,7 @@ function DonutRing({ pct }: { pct: number }) {
         cy={17}
         r={r}
         fill="none"
-        stroke="#7C5CFF"
+        stroke="#6366F1"
         strokeWidth={4}
         strokeLinecap="round"
         strokeDasharray={c}
@@ -504,7 +504,7 @@ function Sparkline({ draw, reduced }: { draw: number; reduced: boolean }) {
       <path
         d={d}
         fill="none"
-        stroke="#F5A524"
+        stroke="#F59E0B"
         strokeWidth={2.5}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -527,7 +527,7 @@ function BarChart({ grow, reduced }: { grow: number; reduced: boolean }) {
         return (
           <span
             key={i}
-            className="flex-1 rounded-[2px] bg-[#3550E0]"
+            className="flex-1 rounded-[2px] bg-[#10B981]"
             style={{ height: `${Math.max(6, h * local * 100)}%` }}
           />
         );
@@ -556,7 +556,7 @@ const PINGS: Ping[] = [
     id: "ws",
     label: "Workspace created",
     sub: "Ready to roll",
-    color: "#3550E0",
+    color: "#10B981",
     icon: FolderPlusIcon,
     revealAt: 0,
     pos: "left-[6%] top-[20%]",
@@ -565,7 +565,7 @@ const PINGS: Ping[] = [
     id: "client",
     label: "New client added",
     sub: "Saved to CRM",
-    color: "#7C5CFF",
+    color: "#6366F1",
     icon: UserPlusIcon,
     revealAt: 1,
     pos: "right-[7%] top-[16%]",
@@ -574,7 +574,7 @@ const PINGS: Ping[] = [
     id: "invoice",
     label: "Invoice paid",
     sub: "+ $1,200.00",
-    color: "#12B5A6",
+    color: "#0EA5E9",
     icon: BanknoteIcon,
     revealAt: 2,
     pos: "left-[8%] top-[58%]",
@@ -583,7 +583,7 @@ const PINGS: Ping[] = [
     id: "tax",
     label: "Tax configured",
     sub: "VAT 5% • UAE",
-    color: "#F5A524",
+    color: "#F59E0B",
     icon: ReceiptTextIcon,
     revealAt: 2,
     pos: "right-[6%] top-[62%]",
@@ -592,7 +592,7 @@ const PINGS: Ping[] = [
     id: "task",
     label: "Task complete",
     sub: "Onboarding done",
-    color: "#F2557A",
+    color: "#EF4444",
     icon: CheckCircle2Icon,
     revealAt: 3,
     pos: "right-[12%] top-[40%]",
@@ -669,7 +669,7 @@ function GridNoise() {
 }
 
 function Sparkles({ reduced }: { reduced: boolean }) {
-  const colors = ["#3550E0", "#7C5CFF", "#12B5A6", "#F5A524", "#F2557A"];
+  const colors = ["#10B981", "#6366F1", "#0EA5E9", "#F59E0B", "#EF4444"];
   const dots = useMemo(
     () =>
       Array.from({ length: 18 }, (_, i) => ({
@@ -716,10 +716,10 @@ function Sparkles({ reduced }: { reduced: boolean }) {
 
 function Aurora({ reduced }: { reduced: boolean }) {
   const blobs = [
-    { c: "#3550E0", x: "8%", y: "14%", s: 320 },
-    { c: "#7C5CFF", x: "78%", y: "10%", s: 280 },
-    { c: "#12B5A6", x: "82%", y: "74%", s: 300 },
-    { c: "#F2557A", x: "12%", y: "78%", s: 260 },
+    { c: "#10B981", x: "8%", y: "14%", s: 320 },
+    { c: "#6366F1", x: "78%", y: "10%", s: 280 },
+    { c: "#0EA5E9", x: "82%", y: "74%", s: 300 },
+    { c: "#EF4444", x: "12%", y: "78%", s: 260 },
   ];
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
@@ -759,7 +759,7 @@ function Aurora({ reduced }: { reduced: boolean }) {
 }
 
 function Confetti({ reduced }: { reduced: boolean }) {
-  const colors = ["#3550E0", "#7C5CFF", "#12B5A6", "#F5A524", "#F2557A"];
+  const colors = ["#10B981", "#6366F1", "#0EA5E9", "#F59E0B", "#EF4444"];
   const pieces = useMemo(
     () =>
       Array.from({ length: 28 }, (_, i) => ({

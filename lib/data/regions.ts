@@ -1,5 +1,5 @@
 /**
- * Subdivision (region/state/emirate) lists for Manpower target markets.
+ * Subdivision (region/state/emirate) lists for ManpowerHub target markets.
  * Country code = ISO 3166-1 alpha-2. Returns null for countries with no curated list —
  * UI then falls back to a free-text input.
  */

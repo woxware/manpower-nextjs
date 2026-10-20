@@ -6,7 +6,7 @@ import { TERMS_SECTIONS } from "@/content/legal/terms";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Manpower Terms of Service",
+  description: "ManpowerHub Terms of Service",
 };
 
 export default function TermsPage() {

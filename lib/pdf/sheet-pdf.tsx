@@ -14,12 +14,12 @@ import { formatSheetAmount } from "@/components/features/documents/sheets/types"
 import type { PdfPartyColumn, PdfSheetModel, PdfTotalsRow } from "./sheet-model";
 
 const C = {
-  ink: "#14161A",
-  muted: "#54585F",
-  dim: "#898E96",
-  hair: "#ECECE7",
-  hairStrong: "#D9D9D2",
-  pillBg: "#F4F4F1",
+  ink: "#111827",
+  muted: "#4B5563",
+  dim: "#9CA3AF",
+  hair: "#EBEEF2",
+  hairStrong: "#DADFE6",
+  pillBg: "#F1F5F9",
   successBg: "#E6F2EB",
   success: "#1F8A52",
   warnBg: "#FAF0DD",
@@ -32,7 +32,7 @@ const DISPLAY = "Chillax";
 /** `#RRGGBB` → `rgba(r,g,b,a)`. React-PDF does not read 8-digit hex. */
 export function softenHex(hex: string, alpha: number): string {
   const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
-  if (!m) return `rgba(53,80,224,${alpha})`;
+  if (!m) return `rgba(16,185,129,${alpha})`;
   const n = parseInt(m[1], 16);
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${alpha})`;
 }
@@ -216,7 +216,7 @@ function LineItems({ model }: { model: PdfSheetModel }) {
             <View style={{ flex: 1, paddingVertical: 10.4, flexDirection: "row", gap: 5, alignItems: "center" }}>
               <Text style={{ fontSize: 9.3, fontWeight: 500 }}>{item.description}</Text>
               {item.isOptional ? (
-                <Text style={{ fontSize: 7, color: "#3550E0", backgroundColor: "#EAEEFC", borderRadius: 99, paddingHorizontal: 5, paddingVertical: 1 }}>
+                <Text style={{ fontSize: 7, color: "#10B981", backgroundColor: "#ECFDF5", borderRadius: 99, paddingHorizontal: 5, paddingVertical: 1 }}>
                   Optional
                 </Text>
               ) : null}

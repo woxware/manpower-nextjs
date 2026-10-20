@@ -50,7 +50,7 @@ const meta: Meta<typeof ProjectTemplatesManager> = {
     docs: {
       description: {
         component:
-          "Manage Manpower starter templates and your saved project templates from `/projects/templates`. User templates can be renamed or deleted; all templates can be used to start a new project.",
+          "Manage ManpowerHub starter templates and your saved project templates from `/projects/templates`. User templates can be renamed or deleted; all templates can be used to start a new project.",
       },
     },
   },

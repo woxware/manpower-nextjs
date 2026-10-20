@@ -220,7 +220,7 @@ export function CreditNoteSheet({
         leftTitle="Applied as"
         leftContent={
           appliedAsLines.length > 0 ? (
-            <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6 }}>
+            <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6 }}>
               {appliedAsLines.map((line, i) => (
                 <div key={i}>{line}</div>
               ))}
@@ -230,7 +230,7 @@ export function CreditNoteSheet({
         rightTitle="Notes"
         rightContent={
           notesFooter ? (
-            <div style={{ fontSize: 12, color: "#54585F", lineHeight: 1.6 }}>
+            <div style={{ fontSize: 12, color: "#4B5563", lineHeight: 1.6 }}>
               {notesFooter}
             </div>
           ) : undefined

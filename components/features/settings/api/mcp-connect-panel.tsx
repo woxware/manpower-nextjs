@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 const STEPS = [
   "In Claude, open Settings, then Connectors, and choose Add custom connector.",
   "Paste the connector URL below and add it.",
-  "Sign in to Manpower when Claude asks, then choose Allow.",
+  "Sign in to ManpowerHub when Claude asks, then choose Allow.",
 ];
 
 type McpConnectPanelProps = {

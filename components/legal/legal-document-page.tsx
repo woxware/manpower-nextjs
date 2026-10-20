@@ -67,7 +67,7 @@ export function LegalDocumentPage({
       </main>
 
       <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Manpower
+        © {new Date().getFullYear()} ManpowerHub
       </footer>
     </div>
   );

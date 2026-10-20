@@ -6,6 +6,14 @@ const meta: Meta<typeof BrandLockup> = {
   title: "Shared/BrandLockup",
   component: BrandLockup,
   tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'ManpowerHub lockup: the emerald cube mark (`public/images/branding/icon.png`) beside the "ManpowerHub" text wordmark — set in the display face and coloured by `var(--fg)`, so one node serves light and dark with no image asset per theme. `forceDarkWordmark` switches the type to white for always-dark containers.',
+      },
+    },
+  },
 };
 
 export default meta;

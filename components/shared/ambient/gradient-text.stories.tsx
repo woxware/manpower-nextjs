@@ -10,7 +10,7 @@ const meta: Meta<typeof GradientText> = {
     docs: {
       description: {
         component:
-          "Signature blue -> violet -> rose gradient text treatment, shared by the onboarding-complete loader, auth headlines, and the onboarding page shell. Use for one emphasized phrase per headline, not for body copy.",
+          "Signature green -> indigo -> sky gradient text treatment, shared by the onboarding-complete loader, auth headlines, and the onboarding page shell. Use for one emphasized phrase per headline, not for body copy.",
       },
     },
   },

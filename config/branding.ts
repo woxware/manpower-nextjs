@@ -6,8 +6,9 @@ export const branding = {
   appIcon,
   /** Sidebar / auth mark — same asset as favicon for one consistent icon. */
   mark: appIcon,
-  /** Wordmark for light backgrounds (e.g. light theme). */
-  wordmarkOnLightBg: "/images/branding/typeface-dark.svg",
-  /** Wordmark for dark backgrounds (e.g. dark theme). */
-  wordmarkOnDarkBg: "/images/branding/typeface-white.svg",
+  /**
+   * The wordmark is type, not an image: see `Wordmark` in
+   * `components/shared/brand-lockup.tsx` ("ManpowerHub" in the display face,
+   * coloured by `var(--fg)` so one node serves both themes).
+   */
 } as const;

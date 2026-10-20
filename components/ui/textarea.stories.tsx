@@ -16,7 +16,7 @@ export const Default: Story = {};
 export const WithValue: Story = {
   args: {
     defaultValue:
-      "Thank you for considering Manpower for your next project. I look forward to working with you.",
+      "Thank you for considering ManpowerHub for your next project. I look forward to working with you.",
   },
 };
 
