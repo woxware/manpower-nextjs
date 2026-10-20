@@ -12,6 +12,31 @@ type BrandLockupProps = {
   forceDarkWordmark?: boolean;
 };
 
+type WordmarkProps = {
+  /** Render light type for always-dark containers (e.g. a navy sidebar). */
+  forceDark?: boolean;
+  className?: string;
+};
+
+/**
+ * "ManpowerHub" set in the app display face — the wordmark is type, not an
+ * image, so it follows the theme (`var(--fg)`) with no asset per colour scheme.
+ */
+export function Wordmark({ forceDark = false, className }: WordmarkProps) {
+  return (
+    <span
+      className={cn(
+        "block whitespace-nowrap font-heading font-bold leading-none tracking-[-0.02em]",
+        "text-[1.0625rem] sm:text-[1.1875rem]",
+        forceDark ? "text-white" : "text-[var(--fg)]",
+        className,
+      )}
+    >
+      ManpowerHub
+    </span>
+  );
+}
+
 /**
  * Default-colored mark + theme-aware wordmark (dark type on light bg, light type on dark bg).
  */
@@ -37,27 +62,7 @@ export function BrandLockup({
             wordmarkWrapperClassName,
           )}
         >
-          {!forceDarkWordmark && (
-            <Image
-              src={branding.wordmarkOnLightBg}
-              alt=""
-              width={160}
-              height={36}
-              unoptimized
-              className="block h-[1.125rem] w-auto max-w-[min(100%,11rem)] object-contain object-left-bottom dark:hidden sm:h-5"
-            />
-          )}
-          <Image
-            src={branding.wordmarkOnDarkBg}
-            alt=""
-            width={160}
-            height={36}
-            unoptimized
-            className={cn(
-              "h-[1.125rem] w-auto max-w-[min(100%,11rem)] object-contain object-left-bottom sm:h-5",
-              forceDarkWordmark ? "block" : "hidden dark:block",
-            )}
-          />
+          <Wordmark forceDark={forceDarkWordmark} />
         </span>
       </div>
     </div>

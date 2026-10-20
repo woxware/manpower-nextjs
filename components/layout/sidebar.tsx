@@ -56,6 +56,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { CollapsedNavFlyout } from "@/components/layout/collapsed-nav-flyout";
+import { Wordmark } from "@/components/shared/brand-lockup";
 import { branding } from "@/config/branding";
 import { DOCUMENT_TYPE_NAV, slugFromType } from "@/lib/documents/document-routes";
 import { useActiveDocumentType } from "@/lib/documents/active-type-state";
@@ -384,25 +385,9 @@ export function AppSidebar({
 
         {!collapsed && (
           <div className="flex h-7 items-center">
-            {/* Expanded follows the app theme, so render both and let the
-                dark variant (`[data-theme="dark"] *`) pick one. */}
-            <Image
-              src={branding.wordmarkOnLightBg}
-              alt="ManpowerHub"
-              width={88}
-              height={18}
-              priority
-              className="block dark:hidden"
-            />
-            <Image
-              src={branding.wordmarkOnDarkBg}
-              alt=""
-              aria-hidden
-              width={88}
-              height={18}
-              priority
-              className="hidden dark:block"
-            />
+            {/* Theme-aware wordmark: type coloured by `var(--fg)`, so one node
+                works in both themes (replaces the old light/dark image pair). */}
+            <Wordmark />
           </div>
         )}
       </div>

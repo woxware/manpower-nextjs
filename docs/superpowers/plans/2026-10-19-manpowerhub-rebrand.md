@@ -136,14 +136,14 @@
 
 ### Task 6: Logo assets + text wordmark
 
-- [ ] **Step 1:** Create `public/images/branding/icon.svg` — 100×100 emerald (`#10B981`) rounded tile (r=26) with the site's white cube/hex glyph (stroke `#FFFFFF`, width 6, round caps/joins, scaled from the 24-unit viewBox).
-- [ ] **Step 2:** Regenerate `public/images/branding/icon.png` at 561×561 from that SVG (render via Playwright screenshot with transparent background; verify by opening the PNG — tile emerald, glyph white, no Craftly C).
-- [ ] **Step 3:** `config/branding.ts` — keep `appIcon`/`mark` → `icon.png`; **drop** `wordmarkOnLightBg` / `wordmarkOnDarkBg`.
-- [ ] **Step 4:** `components/shared/brand-lockup.tsx` — replace the two wordmark `<Image>`s with a text lockup: `<span>` "ManpowerHub", `font-semibold tracking-tight`, colour `var(--fg)` (auto-flips per theme), sized to the current `h-[1.125rem] sm:h-5` box; keep the mark `<Image>`; update `aria-label`/alt. Export a `Wordmark` sub-component for reuse.
-- [ ] **Step 5:** `components/layout/sidebar.tsx` inline wordmark block (lines ~385–400) → the shared `Wordmark`; keep the collapsed/expanded behaviour and the `dark:hidden` semantics via `var(--fg)`.
-- [ ] **Step 6:** Delete `typeface-dark.svg`, `typeface-white.svg`, `logo-icon-default.svg`, `logo-icon-white.svg` after `grep -rn "typeface-\|logo-icon"` returns no code references.
-- [ ] **Step 7:** Update Storybook copy that describes image wordmarks: `components/shared/brand-lockup.stories.tsx`, `components/layout/sidebar.stories.tsx:85`.
-- [ ] **Step 8:** `npm test` + `npm run lint` + `npm run build` → commit `feat(brand): ManpowerHub mark + text wordmark, drop Craftly assets`.
+- [x] **Step 1:** Create `public/images/branding/icon.svg` — 100×100 emerald (`#10B981`) rounded tile (r=26) with the site's white cube/hex glyph (stroke `#FFFFFF`, width 6, round caps/joins, scaled from the 24-unit viewBox).
+- [x] **Step 2:** Regenerate `public/images/branding/icon.png` at 561×561 from that SVG — rendered with `rsvg-convert -w 561 -h 561` (alpha preserved; visually verified: emerald tile, white cube, no Craftly C).
+- [x] **Step 3:** `config/branding.ts` — keep `appIcon`/`mark` → `icon.png`; **drop** `wordmarkOnLightBg` / `wordmarkOnDarkBg`.
+- [x] **Step 4:** `components/shared/brand-lockup.tsx` — replace the two wordmark `<Image>`s with a text lockup: `<span>` "ManpowerHub", `font-semibold tracking-tight`, colour `var(--fg)` (auto-flips per theme), sized to the current `h-[1.125rem] sm:h-5` box; keep the mark `<Image>`; update `aria-label`/alt. Export a `Wordmark` sub-component for reuse.
+- [x] **Step 5:** `components/layout/sidebar.tsx` inline wordmark block (lines ~385–400) → the shared `Wordmark`; keep the collapsed/expanded behaviour and the `dark:hidden` semantics via `var(--fg)`.
+- [x] **Step 6:** Deleted `typeface-dark.svg`, `typeface-white.svg`, `logo-icon-default.svg`, `logo-icon-white.svg` — grep confirmed only `config/branding.ts` referenced them, and that file no longer exports the keys.
+- [x] **Step 7:** Update Storybook copy that describes image wordmarks: `components/shared/brand-lockup.stories.tsx`, `components/layout/sidebar.stories.tsx:85`.
+- [x] **Step 8:** `tsc --noEmit` clean, `npm test` green (only the pre-existing nav-registry failure), lint clean, `npm run build` exit 0 → commit `feat(brand): ManpowerHub mark + text wordmark, drop Craftly assets`.
 
 ### Task 7: Docs
 
