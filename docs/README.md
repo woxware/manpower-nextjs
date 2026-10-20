@@ -1,6 +1,6 @@
-# Manpower UI — Documentation
+# ManpowerHub UI — Documentation
 
-The complete **Manpower** workspace front end running 100% locally. Every
+The complete **ManpowerHub** workspace front end running 100% locally. Every
 screen works, every create / edit / delete persists — with no Supabase, no AI
 model, no billing provider and no email service behind it.
 
@@ -15,9 +15,9 @@ Start here:
 
 ## What this is
 
-This repo is the front end extracted from the full-stack **Craftly** app. The
-app's own code — ~107 query modules, 60+ server actions, all React components
-and pages — is untouched. Only the thin seams underneath were rewritten:
+This repo is the **ManpowerHub** front end. The app's own code — ~107 query
+modules, 60+ server actions, all React components and pages — is untouched.
+Only the thin seams underneath were rewritten:
 
 | Layer | Real app | This repo |
 |---|---|---|

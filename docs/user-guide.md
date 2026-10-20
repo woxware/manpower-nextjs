@@ -1,6 +1,6 @@
 # User guide
 
-A tour of every screen in Manpower. All data shown is the seeded demo
+A tour of every screen in ManpowerHub. All data shown is the seeded demo
 workspace; everything you change persists locally (see
 [Getting started → Resetting](./getting-started.md#resetting-the-demo)).
 

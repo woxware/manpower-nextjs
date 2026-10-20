@@ -1,6 +1,6 @@
-# Manpower — UI
+# ManpowerHub — UI
 
-The complete **Manpower** workspace front end — CRM, projects, tasks, time
+The complete **ManpowerHub** workspace front end — CRM, projects, tasks, time
 tracking, expenses, documents, marketing, billing settings and the AI panel —
 running **100% on the client machine**. No Supabase, no model, no billing
 provider, no email service: every screen is here, fully navigable, and every

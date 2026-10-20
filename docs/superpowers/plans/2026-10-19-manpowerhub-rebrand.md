@@ -147,9 +147,9 @@
 
 ### Task 7: Docs
 
-- [ ] **Step 1:** `docs/README.md:18` — remove the Craftly provenance line; `README.md`/`docs/README.md` titles and intro → ManpowerHub; `docs/user-guide.md:3` "every screen in Manpower" → ManpowerHub.
-- [ ] **Step 2:** `grep -ri craftly` → zero matches repo-wide.
-- [ ] **Step 3:** Commit `docs: Craftly → ManpowerHub`.
+- [x] **Step 1:** `docs/README.md:18` — removed the Craftly provenance line; `README.md`/`docs/README.md` titles and intro → ManpowerHub; `docs/user-guide.md:3` "every screen in Manpower" → ManpowerHub.
+- [x] **Step 2:** `grep -ri craftly` → zero matches outside this plan/spec record (`docs/superpowers/**` intentionally names the old brand as history).
+- [x] **Step 3:** Commit `docs: Craftly → ManpowerHub`.
 
 ### Task 8: Verification
 
