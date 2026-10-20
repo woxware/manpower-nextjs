@@ -83,7 +83,7 @@ export function AppHeader({
             "tracking-[-0.014em] text-foreground",
           )}
         >
-          {page || section || "Manpower"}
+          {page || section || "ManpowerHub"}
         </span>
       </div>
 

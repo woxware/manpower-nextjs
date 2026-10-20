@@ -41,7 +41,7 @@ export function AuthShell({
         </div>
       </main>
       <footer className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center justify-between gap-2 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-xs text-[var(--fg-3)] sm:flex-row sm:gap-3 sm:py-6">
-        <span>© {year} Manpower</span>
+        <span>© {year} ManpowerHub</span>
         <nav className="flex items-center gap-4 sm:gap-6">
           <LegalPolicyLink
             policy="privacy"

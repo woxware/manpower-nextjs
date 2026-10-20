@@ -6,7 +6,7 @@ import { PRIVACY_SECTIONS } from "@/content/legal/privacy";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Manpower Privacy Policy",
+  description: "ManpowerHub Privacy Policy",
 };
 
 export default function PrivacyPage() {

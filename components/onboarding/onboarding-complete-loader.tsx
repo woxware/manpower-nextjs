@@ -43,7 +43,7 @@ import {
  * deterministic and can be frozen for Storybook / tests.
  */
 
-/** Module palette — each step maps to a real Manpower module colour. */
+/** Module palette — each step maps to a real ManpowerHub module colour. */
 const STEP_COLOR: Record<SetupStepId, string> = {
   workspace: "#10B981", // brand green
   client: "#6366F1", // indigo — clients

@@ -10,7 +10,7 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("[Manpower error] Root layout crashed", error);
+    console.error("[ManpowerHub error] Root layout crashed", error);
   }, [error]);
   return (
     <html lang="en">

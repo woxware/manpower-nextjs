@@ -21,7 +21,7 @@ export function clientNameFormCopy(kind: ClientNameFormKind) {
     kindOrgLabel: "A company or team",
     nameLabel: isPerson ? "Contact name" : "Company name",
     nameHelper: isPerson
-      ? "This is how the client appears in your workspace, lists, and on client-facing documents you send from Manpower."
+      ? "This is how the client appears in your workspace, lists, and on client-facing documents you send from ManpowerHub."
       : "Your workspace, lists, and client-facing documents use this company name as the main title.",
     namePlaceholder: isPerson ? "e.g. Jane Doe" : "e.g. Acme Design Ltd",
     nameAutocomplete: isPerson ? "name" : "organization",

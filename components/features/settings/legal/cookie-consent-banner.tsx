@@ -139,7 +139,7 @@ export function CookieConsentBanner({ initialHasProfileConsent = false }: Props)
           <p className="text-sm font-medium">We use cookies</p>
           <p className="text-sm text-muted-foreground">
             Essential cookies keep you signed in. Optional cookies help us improve
-            Manpower. See our{" "}
+            ManpowerHub. See our{" "}
             <LegalPolicyLink
               policy="privacy"
               className="text-foreground underline underline-offset-4"

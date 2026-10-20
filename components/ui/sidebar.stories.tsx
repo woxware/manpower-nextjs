@@ -52,7 +52,7 @@ export const Default: Story = {
         <SidebarHeader>
           <div className="flex items-center gap-2 px-2 py-1">
             <div className="size-6 rounded-md bg-primary" />
-            <span className="font-semibold text-sm">Manpower</span>
+            <span className="font-semibold text-sm">ManpowerHub</span>
           </div>
         </SidebarHeader>
         <SidebarContent>

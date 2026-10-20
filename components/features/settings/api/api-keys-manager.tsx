@@ -204,7 +204,7 @@ export function ApiKeysManager({ initialKeys }: ApiKeysManagerProps) {
         <EmptyStateCard
           icon={KeyRound}
           title="No API keys yet"
-          description="Create a key to connect Claude, Cursor, Zapier, or a custom GPT to your Manpower workspace. The full key is shown exactly once."
+          description="Create a key to connect Claude, Cursor, Zapier, or a custom GPT to your ManpowerHub workspace. The full key is shown exactly once."
           action={
             <Button onClick={() => setCreateOpen(true)}>
               <Plus className="size-4" />

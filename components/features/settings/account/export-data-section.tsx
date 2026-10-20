@@ -72,7 +72,7 @@ export function ExportDataSection() {
   return (
     <AccountSection
       title="Export my data"
-      description="Download a copy of your Manpower workspace data. Choose the format that works best for you."
+      description="Download a copy of your ManpowerHub workspace data. Choose the format that works best for you."
     >
       <div className="flex max-w-md flex-col gap-4">
         <div className="flex flex-col gap-2">

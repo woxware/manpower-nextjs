@@ -295,7 +295,7 @@ export function buildMockTurn(input: AIStreamRequestInput, facts: MockTurnFacts)
     }
 
     default: {
-      const label = agent === "router" ? "Manpower" : getAgentLabel(agent);
+      const label = agent === "router" ? "ManpowerHub" : getAgentLabel(agent);
       const echo = prompt ? `You asked: “${prompt.slice(0, 160)}”. ` : "";
       return {
         text: `${DEMO_PREAMBLE} ${echo}${DEMO_BODY}`,

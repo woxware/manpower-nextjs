@@ -59,7 +59,7 @@ export function AccountExportPdf({ bundle, email }: Props) {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <Text style={styles.title}>Manpower data export</Text>
+        <Text style={styles.title}>ManpowerHub data export</Text>
         <Text style={styles.subtitle}>
           Account: {email ?? bundle.userId} · Exported {bundle.exportedAt}
         </Text>

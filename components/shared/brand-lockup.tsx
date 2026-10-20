@@ -79,7 +79,7 @@ export function BrandLockupLink({
   return (
     <Link
       href={href}
-      aria-label="Manpower home"
+      aria-label="ManpowerHub home"
       className={cn(
         "inline-flex shrink-0 items-center transition-opacity hover:opacity-90",
         linkClassName,

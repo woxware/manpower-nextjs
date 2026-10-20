@@ -434,7 +434,7 @@ export function ProposalPdf({
   });
 
   return (
-    <Document title={document.title} author={businessName ?? undefined} creator="Manpower">
+    <Document title={document.title} author={businessName ?? undefined} creator="ManpowerHub">
       <CoverPage
         proposalNumber={proposalData.proposal_number}
         headline={headline}

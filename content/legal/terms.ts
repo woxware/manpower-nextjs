@@ -5,8 +5,8 @@ export const TERMS_SECTIONS: LegalDocumentSection[] = [
   {
     title: "Agreement",
     paragraphs: [
-      "By creating a Manpower account or using the service, you agree to these Terms of Service. If you do not agree, do not use Manpower.",
-      "Manpower is operated for freelancers and small creative businesses. These terms govern your use of the web application at app.manpower.app and related services.",
+      "By creating a ManpowerHub account or using the service, you agree to these Terms of Service. If you do not agree, do not use ManpowerHub.",
+      "ManpowerHub is operated for freelancers and small creative businesses. These terms govern your use of the web application at app.manpower.app and related services.",
     ],
   },
   {
@@ -19,7 +19,7 @@ export const TERMS_SECTIONS: LegalDocumentSection[] = [
   {
     title: "Acceptable use",
     paragraphs: [
-      "You may not use Manpower to send unlawful content, harass others, attempt to breach security, or resell the service without permission.",
+      "You may not use ManpowerHub to send unlawful content, harass others, attempt to breach security, or resell the service without permission.",
       "We may suspend or terminate accounts that violate these terms or pose risk to other users or the platform.",
     ],
   },
@@ -33,7 +33,7 @@ export const TERMS_SECTIONS: LegalDocumentSection[] = [
   {
     title: "Limitation of liability",
     paragraphs: [
-      "Manpower is provided “as is”. To the fullest extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of the service.",
+      "ManpowerHub is provided “as is”. To the fullest extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of the service.",
       "Our total liability for any claim relating to the service is limited to the amount you paid us in the twelve months before the claim.",
     ],
   },

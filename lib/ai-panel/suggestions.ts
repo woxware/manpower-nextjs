@@ -21,7 +21,7 @@ const ask = (prompt: string): PageSuggestion => ({ prompt, mode: "ask" });
 const agent = (prompt: string): PageSuggestion => ({ prompt, mode: "agent" });
 
 const DEFAULT: PageSuggestions = {
-  pageLabel: "Manpower",
+  pageLabel: "ManpowerHub",
   items: [
     ask("What needs my attention today?"),
     ask("Summarize my week"),

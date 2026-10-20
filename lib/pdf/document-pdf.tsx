@@ -289,7 +289,7 @@ export function DocumentPdf({
       <Document
         title={document.title}
         author={businessName ?? undefined}
-        creator="Manpower"
+        creator="ManpowerHub"
       >
         <SheetPdfPage
           model={sheetModel}
@@ -306,7 +306,7 @@ export function DocumentPdf({
       <Document
         title={document.title}
         author={businessName ?? undefined}
-        creator="Manpower"
+        creator="ManpowerHub"
       >
         <ReceiptPdfPage
           voucherData={voucherData}
@@ -323,7 +323,7 @@ export function DocumentPdf({
     <Document
       title={document.title}
       author={businessName ?? undefined}
-      creator="Manpower"
+      creator="ManpowerHub"
     >
       <Page size="A4" style={styles.page}>
         {/* Header */}

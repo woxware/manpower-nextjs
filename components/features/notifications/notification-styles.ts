@@ -29,7 +29,7 @@ type NotificationIcon = ComponentType<{
  * brief. Everything resolves to a token in styles/tokens.css so the panel
  * reads as part of the app rather than stock Tailwind dropped into it.
  *
- * Note `text-primary` for the brand blue, not `var(--accent)`: globals.css
+ * Note `text-primary` for the brand green, not `var(--accent)`: globals.css
  * re-points --accent at --accent-soft for shadcn's hover backgrounds, so
  * `text-[var(--accent)]` silently renders the pale tint. See the alias block
  * in styles/globals.css.

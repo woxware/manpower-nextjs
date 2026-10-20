@@ -197,7 +197,7 @@ export function CampaignDialog({
         <DialogHeader>
           <DialogTitle>New campaign</DialogTitle>
           <DialogDescription>
-            Describe a goal and Manpower drafts a batch of posts across your
+            Describe a goal and ManpowerHub drafts a batch of posts across your
             date range.
           </DialogDescription>
         </DialogHeader>

@@ -3,5 +3,5 @@ export function captureError(
   context?: Record<string, unknown>,
 ): void {
   // TODO: replace with Sentry.captureException when @sentry/nextjs is configured
-  console.error("[Manpower error]", error, context ?? {});
+  console.error("[ManpowerHub error]", error, context ?? {});
 }

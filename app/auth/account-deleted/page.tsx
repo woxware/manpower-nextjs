@@ -12,7 +12,7 @@ export default function AccountDeletedPage() {
         Your account has been deleted
       </h1>
       <p className="text-sm text-muted-foreground">
-        All of your Manpower data has been permanently removed. You can create
+        All of your ManpowerHub data has been permanently removed. You can create
         a new account any time if you return.
       </p>
       <Link

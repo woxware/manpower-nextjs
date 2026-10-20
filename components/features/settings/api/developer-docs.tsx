@@ -168,7 +168,7 @@ export function DeveloperDocs() {
           Developer Documentation
         </h2>
         <p className="text-[13px] text-muted-foreground mt-1">
-          Connect your Manpower workspace to Claude, Cursor, ChatGPT, Zapier,
+          Connect your ManpowerHub workspace to Claude, Cursor, ChatGPT, Zapier,
           and any MCP-compatible tool. Read your business data, create records,
           and automate workflows — all authenticated with a single API key.
         </p>
@@ -225,7 +225,7 @@ export function DeveloperDocs() {
             />
 
             <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 text-amber-800 dark:text-amber-300 text-sm">
-              <strong>⚠️ Treat your API key like a password.</strong> Anyone with it can read your Manpower data. If compromised, revoke it immediately in Settings → API & Integrations.
+              <strong>⚠️ Treat your API key like a password.</strong> Anyone with it can read your ManpowerHub data. If compromised, revoke it immediately in Settings → API & Integrations.
             </div>
           </Section>
 
@@ -279,7 +279,7 @@ export function DeveloperDocs() {
             </div>
 
             <div className="rounded-lg border border-border bg-muted/50 p-4 text-sm">
-              <strong className="text-foreground">No delete tool.</strong> The API is read-mostly by design. Documents, invoices, payments, and profiles cannot be written through the API — use the Manpower app for those.
+              <strong className="text-foreground">No delete tool.</strong> The API is read-mostly by design. Documents, invoices, payments, and profiles cannot be written through the API — use the ManpowerHub app for those.
             </div>
           </Section>
 
@@ -475,7 +475,7 @@ export function DeveloperDocs() {
 URL:    https://app.manpower.app/api/v1/entities/clients
 Header: Authorization → Bearer ca_YOUR_KEY`}
                 />
-                <p className="text-sm">Example: Sync new Gmail contacts to Manpower clients.</p>
+                <p className="text-sm">Example: Sync new Gmail contacts to ManpowerHub clients.</p>
               </TabsContent>
             </Tabs>
           </Section>
@@ -483,7 +483,7 @@ Header: Authorization → Bearer ca_YOUR_KEY`}
           {/* ── Entity Reference ── */}
           <Section id="entities" icon={Database} title="Entity Reference">
             <p>
-              Every entity below is readable. <strong className="text-foreground">Writable</strong> means you can create and update through the API. <strong className="text-foreground">Blocked</strong> means the API refuses — use the Manpower app instead.
+              Every entity below is readable. <strong className="text-foreground">Writable</strong> means you can create and update through the API. <strong className="text-foreground">Blocked</strong> means the API refuses — use the ManpowerHub app instead.
             </p>
 
             <div className="rounded-lg border border-border overflow-hidden">
@@ -531,7 +531,7 @@ Header: Authorization → Bearer ca_YOUR_KEY`}
             </div>
 
             <div className="rounded-lg border border-border bg-muted/50 p-4 text-sm">
-              <strong className="text-foreground">Deletes are never exposed.</strong> No entity can be deleted through the API. Use the Manpower app for that.
+              <strong className="text-foreground">Deletes are never exposed.</strong> No entity can be deleted through the API. Use the ManpowerHub app for that.
             </div>
           </Section>
 

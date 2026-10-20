@@ -1,4 +1,4 @@
 export const siteConfig = {
-  name: "Manpower",
+  name: "ManpowerHub",
   description: "Application",
 } as const;

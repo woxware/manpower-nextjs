@@ -14,7 +14,7 @@ const meta: Meta<typeof KraftFace> = {
     docs: {
       description: {
         component:
-          "Kraft, Manpower's assistant character: a flat squircle in the brand blue with two pill eyes — " +
+          "Kraft, ManpowerHub's assistant character: a flat squircle in the brand green with two pill eyes — " +
           "no mouth, gradient or shine. Every feeling comes from eye shape (open height, eyelid cut and tilt, " +
           "happy `^^` arcs) and body motion (bob, hop, shake, pop), plus small accent marks. Live faces share " +
           "one rAF ticker, blink, glance around and follow the pointer in friendly emotions. " +

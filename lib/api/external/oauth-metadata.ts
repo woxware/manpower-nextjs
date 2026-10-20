@@ -6,7 +6,7 @@
  *   GET /.well-known/oauth-protected-resource[/api/mcp]
  *   GET /.well-known/oauth-authorization-server
  *
- * Users authorize by signing in to Manpower and approving the connection on
+ * Users authorize by signing in to ManpowerHub and approving the connection on
  * /mcp/authorize — no API key needed, so MCP works on every plan.
  */
 

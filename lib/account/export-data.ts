@@ -172,7 +172,7 @@ export function bundleToCsvFiles(
 ): Record<string, string> {
   const files: Record<string, string> = {
     "README.txt":
-      "Manpower data export. Each CSV file contains one data type from your workspace.",
+      "ManpowerHub data export. Each CSV file contains one data type from your workspace.",
   };
 
   const tables: Array<[string, Record<string, unknown>[] | Record<string, unknown> | null]> = [

@@ -33,7 +33,7 @@ describe("suggestionsForPath", () => {
 
   it("falls back to a sensible default", () => {
     const fallback = suggestionsForPath("/settings/billing");
-    expect(fallback.pageLabel).toBe("Manpower");
+    expect(fallback.pageLabel).toBe("ManpowerHub");
     expect(fallback.items).toHaveLength(3);
   });
 

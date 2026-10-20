@@ -22,7 +22,7 @@ export function toQuoteSheetStatus(status: string | null): SheetStatus {
 export function toLpoSheetStatus(status: string | null): SheetStatus {
   switch (status) {
     case "approved":
-      return { label: "Authorised · received in Manpower", variant: "accent" };
+      return { label: "Authorised · received in ManpowerHub", variant: "accent" };
     case "sent":
     case "viewed":
       return { label: "Authorised · awaiting acknowledgement", variant: "accent" };

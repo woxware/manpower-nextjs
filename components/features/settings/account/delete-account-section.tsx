@@ -75,7 +75,7 @@ export function DeleteAccountSection() {
       <AccountSection
         variant="danger"
         title="Delete account"
-        description="Permanently delete your Manpower account and all associated data. This cannot be undone."
+        description="Permanently delete your ManpowerHub account and all associated data. This cannot be undone."
       >
         <Button
           type="button"

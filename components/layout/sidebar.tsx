@@ -369,12 +369,12 @@ export function AppSidebar({
       >
         <Link
           href="/dashboard"
-          aria-label="Manpower home"
+          aria-label="ManpowerHub home"
           className="grid size-7 shrink-0 place-items-center overflow-hidden rounded-[7px]"
         >
           <Image
             src={branding.mark}
-            alt="Manpower"
+            alt="ManpowerHub"
             width={28}
             height={28}
             priority
@@ -388,7 +388,7 @@ export function AppSidebar({
                 dark variant (`[data-theme="dark"] *`) pick one. */}
             <Image
               src={branding.wordmarkOnLightBg}
-              alt="Manpower"
+              alt="ManpowerHub"
               width={88}
               height={18}
               priority

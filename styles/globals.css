@@ -987,7 +987,7 @@ td[data-numeric="true"],
 }
 
 /* Auth/onboarding shell — calm single-colour brand wash (replaces the
-   multicolour ambient backdrop). Tints the canvas with the brand blue at low
+   multicolour ambient backdrop). Tints the canvas with the brand green at low
    opacity, balanced top + bottom so it never reads as one-sided.
    --border-focus, not --accent: see the alias block above. */
 .brand-canvas-glow {

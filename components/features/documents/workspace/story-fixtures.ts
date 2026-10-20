@@ -1,7 +1,7 @@
 import type { ClientRow, LineItemRow, ProjectListRow, ServiceRow } from "@/types";
 import type { VariableContext } from "@/lib/documents/variables";
 
-/** Realistic Manpower data shared by the editor stories. */
+/** Realistic ManpowerHub data shared by the editor stories. */
 export const client = (id: string, name: string, contact: string, currency: string): ClientRow => ({
   id, user_id: "u", name, contact_name: contact, website: null, email: `${contact.split(" ")[0].toLowerCase()}@${name.split(" ")[0].toLowerCase()}.studio`,
   billing_email: null, phone: null, company: name, address: "Business Bay, Dubai", currency, tax_id: null, payment_terms_days: 30,

@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { NumberInput } from "./number-input";
 
 /**
- * `NumberInput` is the standard control for any numeric field in Manpower
+ * `NumberInput` is the standard control for any numeric field in ManpowerHub
  * (amounts, quantities, rates, terms). It looks identical to the base `Input`
  * but removes the native number-input quirks that cause accidental edits:
  *
