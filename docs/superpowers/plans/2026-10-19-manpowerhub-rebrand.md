@@ -102,9 +102,9 @@
 
 ### Task 1: Colour tokens (`styles/tokens.css`)
 
-- [ ] **Step 1:** Apply the light + dark accent tables and the light neutral table exactly as written above; update the file-header comment ("Muted blue accent" → ManpowerHub emerald).
-- [ ] **Step 2:** Update `styles/globals.css:402` comment text that names `#3550E0` / `#6E83F0` (comment only — the alias block itself is unchanged and must stay).
-- [ ] **Step 3:** `npm test` + `npm run lint`, then commit `feat(brand): ManpowerHub colour tokens — emerald accent, slate neutrals`.
+- [x] **Step 1:** Apply the light + dark accent tables and the light neutral table exactly as written above; update the file-header comment ("Muted blue accent" → ManpowerHub emerald).
+- [x] **Step 2:** Update `styles/globals.css:402` comment text that names `#3550E0` / `#6E83F0` (comment only — the alias block itself is unchanged and must stay).
+- [x] **Step 3:** `npm test` + `npm run lint`, then commit `feat(brand): ManpowerHub colour tokens — emerald accent, slate neutrals`.
 
 ### Task 2: Ambient palette + onboarding step colours + tests
 

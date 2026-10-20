@@ -398,15 +398,15 @@ a.auth-link:hover {
   --radius-4xl: calc(var(--radius) * 3.6);
 }
 
-/* shadcn/ui → Manpower design system token aliases.
- * tokens.css defines --accent as the strong blue (#3550E0 light / #6E83F0 dark).
+/* shadcn/ui → ManpowerHub design system token aliases.
+ * tokens.css defines --accent as the strong brand green (#10B981 light / #34D399 dark).
  * shadcn uses --accent for subtle hover backgrounds, so we override it here with
- * --accent-soft. Use --primary or --border-focus where the strong blue is needed.
+ * --accent-soft. Use --primary or --border-focus where the strong brand green is needed.
  *
  * This override is global and wins on cascade order, so `var(--accent)` renders
  * the pale tint EVERYWHERE — in this file, in component classes, and in
  * `text-[var(--accent)]` utilities alike. Writing `text-[var(--accent)]` for the
- * brand blue produces an invisible element, which is exactly what happened
+ * brand green produces an invisible element, which is exactly what happened
  * across eight components before this was tracked down. In Tailwind classes use
  * `text-primary` / `bg-primary` / `ring-primary`; in raw CSS use
  * `var(--border-focus)`. `bg-accent` remains correct for shadcn hover surfaces.
