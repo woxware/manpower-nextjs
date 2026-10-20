@@ -62,10 +62,12 @@
 }
 
 [data-theme="dark"] {
-  --bg-canvas: #0E0F12;
-  --bg-surface: #16181C;
-  --bg-subtle: #1C1F24;
-  --bg-sunken: #0A0B0E;
+  /* Surfaces — slate-tinted, matching the ManpowerHub marketing site's dark
+     bands (#08090C hero, #0F1319 footer, #171F2B raised). */
+  --bg-canvas: #08090C;
+  --bg-surface: #0F1319;
+  --bg-subtle: #171F2B;
+  --bg-sunken: #050709;
   --bg-overlay: rgba(0, 0, 0, 0.6);
 
   --border: #23262C;
@@ -106,8 +108,8 @@
   --shadow-pop: 0 24px 48px -12px rgba(0, 0, 0, 0.6), 0 8px 16px -8px rgba(0, 0, 0, 0.4);
 
   /* Shell */
-  --frame: #060708;
-  --panel: #111216;
+  --frame: #04050A;
+  --panel: #0B0D12;
 }
 
 :root {
