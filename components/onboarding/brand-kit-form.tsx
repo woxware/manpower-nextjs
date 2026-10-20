@@ -243,7 +243,7 @@ export function BrandKitForm({
   );
 
   const ACCENT_SWATCHES = [
-    "#3550E0",
+    "#10B981",
     "#1F8A52",
     "#B36A12",
     "#C13838",

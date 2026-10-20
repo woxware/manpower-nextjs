@@ -16,7 +16,7 @@ import { DocumentPaperMeta } from "./document-paper-meta";
 
 const C = { ink: "#0f0f0f", muted: "#6b7280" } as const;
 
-const DEFAULT_PRIMARY = "#3550E0";
+const DEFAULT_PRIMARY = "#10B981";
 
 type DocInput = {
   id?: string;

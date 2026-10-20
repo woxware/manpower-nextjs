@@ -11,7 +11,7 @@ import { makePdfStyles } from "./styles";
 const MARGIN_H = 48;
 const MARGIN_TOP = 56;
 const MARGIN_BOTTOM = 64;
-const ACCENT = "#3550E0";
+const ACCENT = "#10B981";
 const DARK = "#14161A";
 const MUTED = "#898E96";
 const DIM = "#54585F";

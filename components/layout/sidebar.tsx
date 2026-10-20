@@ -145,7 +145,7 @@ const PINNED_TYPE_ICON: Record<PinnedItem["item_type"], React.ElementType> = {
 
 const PINNED_TYPE_COLOR: Record<PinnedItem["item_type"], string> = {
   project:  "#E0995E",
-  client:   "#6E83F0",
+  client:   "#6366F1",
   document: "#9B7FD8",
   task:     "#3FB87D",
 };

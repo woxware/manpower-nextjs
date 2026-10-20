@@ -38,7 +38,7 @@ const GROUP_LABELS: Record<number, string> = {
 // Type-colored icons matching sidebar
 const PIN_COLORS: Record<string, string> = {
   project:  "#E0995E",
-  client:   "#6E83F0",
+  client:   "#6366F1",
   document: "#9B7FD8",
   task:     "#3FB87D",
 };
@@ -65,7 +65,7 @@ function getInitials(initials: string): string {
 }
 
 const AVATAR_PALETTES = [
-  ["#3550E0", "#6E83F0"],
+  ["#10B981", "#6366F1"],
   ["#1F8A52", "#3FB87D"],
   ["#B36A12", "#E0995E"],
   ["#C13838", "#E76B6B"],

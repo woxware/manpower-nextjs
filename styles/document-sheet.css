@@ -8,8 +8,8 @@
   width: 800px;
   min-height: 1130px;
   --sheet-ink: #14161a;
-  --sheet-accent: #3550e0;
-  --sheet-accent-soft: #eaeefc;
+  --sheet-accent: #10B981;
+  --sheet-accent-soft: #ECFDF5;
   --sheet-muted: #54585f;
   --sheet-faint: #898e96;
   --sheet-line: #ecece7;
@@ -331,7 +331,7 @@
   position: relative;
   width: 100%; height: 1130px;
   background:
-    radial-gradient(900px 600px at 90% -10%, #EAEEFC 0%, transparent 60%),
+    radial-gradient(900px 600px at 90% -10%, #ECFDF5 0%, transparent 60%),
     linear-gradient(180deg, #FBFBF9 0%, #ffffff 100%);
   padding: 64px;
   display: flex; flex-direction: column;
@@ -452,7 +452,7 @@
 }
 .timeline__bar--accent { background: var(--sheet-accent); }
 .timeline__bar--ghost { background: #ECECE7; }
-.timeline__bar--soft { background: #B0BCF6; }
+.timeline__bar--soft { background: #7DD3FC; }
 
 /* Acceptance signature block */
 .signatures {
@@ -606,8 +606,8 @@
   display: inline-block;
   padding: 1px 8px;
   border-radius: 99px;
-  background: #EAEEFC;
-  color: #3550E0;
+  background: #ECFDF5;
+  color: #10B981;
   font-size: 9.5px;
   letter-spacing: 0.08em;
   font-weight: 600;
@@ -646,16 +646,16 @@
   margin: -56px -64px 36px;
   padding: 36px 64px 32px;
   background:
-    radial-gradient(600px 280px at 100% 0%, #DCE3F9 0%, transparent 70%),
-    #EAEEFC;
-  border-bottom: 1px solid #DCE3F9;
+    radial-gradient(600px 280px at 100% 0%, #D1FAE5 0%, transparent 70%),
+    #ECFDF5;
+  border-bottom: 1px solid #D1FAE5;
 }
-.sheet--brand .brand-band .brandmark { background: #3550E0; }
-.sheet--brand .doc-type { color: #3550E0; }
-.sheet--brand .doc-type-sub { color: #3550E0; opacity: 0.7; }
-.sheet--brand .totals__inner .row.grand { color: #3550E0; border-top-color: #3550E0; }
-.sheet--brand .items thead th { color: #3550E0; border-bottom-color: #DCE3F9; }
-.sheet--brand .party__name { color: #3550E0; }
+.sheet--brand .brand-band .brandmark { background: #10B981; }
+.sheet--brand .doc-type { color: #10B981; }
+.sheet--brand .doc-type-sub { color: #10B981; opacity: 0.7; }
+.sheet--brand .totals__inner .row.grand { color: #10B981; border-top-color: #10B981; }
+.sheet--brand .items thead th { color: #10B981; border-bottom-color: #D1FAE5; }
+.sheet--brand .party__name { color: #10B981; }
 
 /* SERIF — editorial, warm, slightly oversized. */
 .sheet--serif {
@@ -981,7 +981,7 @@
 }
 
 .tiptap-body .tiptap-blockquote {
-  border-left: 3px solid #3550e0;
+  border-left: 3px solid #10B981;
   padding-left: 14px;
   margin: 12px 0;
   color: #54585f;

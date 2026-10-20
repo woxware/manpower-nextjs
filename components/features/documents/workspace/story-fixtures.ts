@@ -22,7 +22,7 @@ export const LINES = [row("l1", "Brand identity design", "Logo, colour system, t
 export const CTX: VariableContext = {
   client: null,
   project: null,
-  brand: { business_name: "Junaid Studio", primary_color: "#3550E0", email_signature: null, logo_url: null },
+  brand: { business_name: "Junaid Studio", primary_color: "#10B981", email_signature: null, logo_url: null },
   sender: { name: "Junaid P", company_name: "Junaid Studio", email: "hello@junaid.studio", address_line1: "Dubai", address_line2: null, city: "Dubai", region: null, postal_code: null, country: "AE", vat_number: "100234567800003", gstin: null, vat_reg_no: null },
   now: new Date("2026-10-09"),
 };

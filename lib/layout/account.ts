@@ -10,7 +10,7 @@ import {
 
 /** Gradient pairs for the initials avatar (start, end). */
 export const AVATAR_PALETTES = [
-  ["#3550E0", "#6E83F0"],
+  ["#10B981", "#6366F1"],
   ["#1F8A52", "#3FB87D"],
   ["#B36A12", "#E0995E"],
   ["#C13838", "#E76B6B"],

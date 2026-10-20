@@ -8,7 +8,7 @@ const BASE_CONTEXT: VariableContext = {
   now: new Date("2026-05-06"),
   brand: {
     business_name: "Onyx Ventures",
-    primary_color: "#3550E0",
+    primary_color: "#10B981",
     email_signature: null,
     logo_url: null,
   },

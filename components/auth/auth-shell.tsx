@@ -32,7 +32,7 @@ export function AuthShell({
             className="h-[3px] w-12 rounded-full bg-[length:300%_100%]"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #3550E0, #7C5CFF, #12B5A6, #F2557A)",
+                "linear-gradient(90deg, #10B981, #6366F1, #0EA5E9, #EF4444)",
             }}
           />
           <div className="w-full rounded-3xl border border-[var(--border)] bg-[var(--bg-surface)]/80 p-6 shadow-[var(--shadow-lg)] backdrop-blur-xl sm:p-10">

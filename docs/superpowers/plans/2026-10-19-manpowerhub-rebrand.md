@@ -79,7 +79,7 @@
 | `rose` | `#F2557A` | `#EF4444` (site red) |
 | `GRADIENT_STOPS` | blue→violet→rose | `#10B981 → #6366F1 → #0EA5E9` |
 
-**Literal sweep (repo-wide, opaque where required)** — `#3550E0→#10B981`, `#2D45C8→#059669`, `#2638B0→#047857`, `#EAEEFC→#ECFDF5`, `#DCE3F9→#D1FAE5`, `#6E83F0→#34D399` (dark/gradient contexts) or `#6366F1` (gradient midpoint), `#8194F3→#2DD4A7`, `#5A71EC→#10B981`, `#B0BCF6→#0EA5E9`, `rgba(53,80,224,…)→rgba(16,185,129,…)`; neutrals per the table above; `#F8F8F6→#F8FAFC`.
+**Literal sweep (repo-wide, opaque where required)** — `#3550E0→#10B981`, `#2D45C8→#059669`, `#2638B0→#047857`, `#EAEEFC→#ECFDF5`, `#DCE3F9→#D1FAE5`, `#6E83F0→#34D399` (dark/gradient contexts) or `#6366F1` (gradient midpoint), `#8194F3→#2DD4A7`, `#5A71EC→#10B981`, `#B0BCF6→#7DD3FC` (pale sky for the soft timeline bar), `rgba(53,80,224,…)→rgba(16,185,129,…)`; neutrals per the table above; `#F8F8F6→#F8FAFC`.
 
 **Names:** `siteConfig.name` → `ManpowerHub`; visible brand strings → `ManpowerHub`. Out of scope: domains/emails.
 
@@ -115,11 +115,11 @@
 
 ### Task 3: Sweep accent literals (24 files)
 
-- [ ] **Step 1:** `styles/document-sheet.css` — `--sheet-accent` and all `#3550e0` / `#DCE3F9` rules → new values (`--sheet-accent: #10B981`, border `#D1FAE5`).
-- [ ] **Step 2:** DOM/gradient literals → `var(--…)` where a token exists, else new hex: `components/shared/ambient/gradient-text.tsx`, `components/shared/gradient-avatar.tsx`, `components/onboarding/onboarding-complete-loader.tsx` (gradients, `bg-[#10B981]/10`, `text-[#10B981]`, aurora), `components/onboarding/brand-kit-form.tsx` + `.stories.tsx` (default swatch), `components/auth/auth-shell.tsx` gradient, `components/layout/more-sheet.tsx`, `lib/layout/account.ts`, `components/features/documents/**` (`doc-brandmark`, `document-paper`, sheets, fixtures).
-- [ ] **Step 3:** PDF outputs (opaque hex only): `lib/pdf/document-pdf.tsx`, `lib/pdf/sheet-pdf.tsx`, `lib/pdf/sheet-model.ts`, `lib/pdf/proposal-pdf.tsx` — `#3550E0→#10B981`, `#EAEEFC→#ECFDF5`, `#14161A→#111827`, `#6E83F0→#6366F1`.
-- [ ] **Step 4:** `grep -ri "3550e0\|2d45c8\|2638b0\|eaeefc\|dce3f9"` → clean (case-insensitive, excluding `.next/`, `node_modules/`, git history).
-- [ ] **Step 5:** `npm test` + `npm run lint` → commit `refactor(brand): sweep accent-blue literals to ManpowerHub emerald`.
+- [x] **Step 1:** `styles/document-sheet.css` — `--sheet-accent` and all `#3550e0` / `#DCE3F9` rules → new values (`--sheet-accent: #10B981`, border `#D1FAE5`).
+- [x] **Step 2:** DOM/gradient literals (21 files swept case-insensitively; headline gradients in `gradient-text.tsx` + loader corrected to `#10B981 → #6366F1 → #0EA5E9` to match `GRADIENT_STOPS`; 4-stop bars keep the red ending) → `var(--…)` where a token exists, else new hex: `components/shared/ambient/gradient-text.tsx`, `components/shared/gradient-avatar.tsx`, `components/onboarding/onboarding-complete-loader.tsx` (gradients, `bg-[#10B981]/10`, `text-[#10B981]`, aurora), `components/onboarding/brand-kit-form.tsx` + `.stories.tsx` (default swatch), `components/auth/auth-shell.tsx` gradient, `components/layout/more-sheet.tsx`, `lib/layout/account.ts`, `components/features/documents/**` (`doc-brandmark`, `document-paper`, sheets, fixtures).
+- [x] **Step 3:** PDF outputs (opaque hex only): `lib/pdf/document-pdf.tsx`, `lib/pdf/sheet-pdf.tsx`, `lib/pdf/sheet-model.ts`, `lib/pdf/proposal-pdf.tsx` — `#3550E0→#10B981`, `#EAEEFC→#ECFDF5`, `#14161A→#111827`, `#6E83F0→#6366F1`.
+- [x] **Step 4:** `grep -ri "3550e0\|2d45c8\|2638b0\|eaeefc\|dce3f9"` → clean (case-insensitive, excluding `.next/`, `node_modules/`, git history).
+- [x] **Step 5:** `npm test` + `npm run lint` → commit `refactor(brand): sweep accent-blue literals to ManpowerHub emerald`.
 
 ### Task 4: Sweep neutral literals (full slate swap)
 

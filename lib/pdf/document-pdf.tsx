@@ -97,7 +97,7 @@ function fmtAmount(n: number): string {
 const STATUS_PILL_MAP: Record<string, { label: string; bg: string; color: string }> = {
   paid: { label: "Paid", bg: "#E6F2EB", color: "#1F8A52" },
   overdue: { label: "Overdue", bg: "#FAF0DD", color: "#B36A12" },
-  sent: { label: "Sent · awaiting payment", bg: "#EAEEFC", color: "#3550E0" },
+  sent: { label: "Sent · awaiting payment", bg: "#ECFDF5", color: "#10B981" },
   partial: { label: "Partially paid", bg: "#FAF0DD", color: "#B36A12" },
   draft: { label: "Draft", bg: "#F4F4F1", color: "#54585F" },
 };

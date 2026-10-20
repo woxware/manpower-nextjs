@@ -90,7 +90,7 @@ export type PdfSheetModel = {
   accent: string;
 };
 
-const DEFAULT_ACCENT = "#3550E0";
+const DEFAULT_ACCENT = "#10B981";
 
 function toSheetItems(lineItems: LineItemRow[]): SheetLineItem[] {
   return lineItems.map((item) => ({

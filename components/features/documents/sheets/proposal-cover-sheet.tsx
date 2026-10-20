@@ -45,7 +45,7 @@ export function ProposalCoverSheet({
   const headlineNode = headlineAccent && headline.includes(headlineAccent) ? (
     <>
       {headline.split(headlineAccent)[0]}
-      <em style={{ fontStyle: "normal", color: "var(--sheet-accent, #3550E0)" }}>{headlineAccent}</em>
+      <em style={{ fontStyle: "normal", color: "var(--sheet-accent, #10B981)" }}>{headlineAccent}</em>
       {headline.split(headlineAccent)[1]}
     </>
   ) : headline;
@@ -107,7 +107,7 @@ export function ProposalCoverSheet({
           <div className="cover__from">
             <div style={{
               width: 40, height: 40, borderRadius: "50%",
-              background: "linear-gradient(135deg, #3550E0, #6E83F0)",
+              background: "linear-gradient(135deg, #10B981, #6366F1)",
               display: "grid", placeItems: "center", color: "#fff",
               fontWeight: 600, fontSize: 13,
             }}>

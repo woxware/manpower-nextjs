@@ -22,7 +22,7 @@ export function DocBrandmark({
     );
   }
   const letter = businessName?.trim().charAt(0).toUpperCase() ?? "?";
-  const accent = primaryColor ?? "#3550E0";
+  const accent = primaryColor ?? "#10B981";
   return (
     <div
       className="brandmark"
